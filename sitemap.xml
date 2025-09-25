@@ -33,23 +33,6 @@ layout: null
     <priority>0.8</priority>
   </url>
   
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}/blog/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Blog posts -->
-  {% for post in site.posts %}
-  <url>
-    <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
-    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  {% endfor %}
-  
   <!-- Pages -->
   {% for page in site.pages %}
     {% unless page.url contains '/404' or page.url contains '/feed' or page.url contains '/sitemap' %}

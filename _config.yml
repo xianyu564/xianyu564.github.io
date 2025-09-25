@@ -14,15 +14,11 @@ remote_theme: pages-themes/minimal@v0.2.0
 
 # Plugins
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-remote-theme
 
 # Language settings for Chinese support
 lang: zh-CN
-
-# Permalink structure for blog posts
-permalink: /blog/:title/
 
 # Navigation
 navigation:
@@ -34,20 +30,12 @@ navigation:
     url: /publications/
   - title: "项目"
     url: /projects/
-  - title: "博客"
-    url: /blog/
 
 # Social media links
 social:
   github: "xianyu564"
   google_scholar: "your-scholar-id"
   twitter: "your-twitter-handle"
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title/
 
 # Markdown settings
 markdown: kramdown
