@@ -101,9 +101,9 @@ summary:focus {
 </style>
 
 <!-- Meta tags for better SEO -->
-<meta name="author" content="{{ site.author | default: site.title }}">
+<meta name="author" content="李明辉">
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-<meta name="keywords" content="学术研究,人工智能,机器学习,深度学习,数据科学,计算机视觉,自然语言处理">
+<meta name="keywords" content="李明辉,人工智能,机器学习,深度学习,可解释AI,多模态学习,医疗AI,联邦学习,北京大学,计算机视觉,自然语言处理">
 
 <!-- Open Graph tags for social media -->
 <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
@@ -111,19 +111,23 @@ summary:focus {
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="zh_CN">
 
 <!-- Twitter Card tags -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
 <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-{% if site.social.twitter %}
-<meta name="twitter:site" content="@{{ site.social.twitter }}">
-{% endif %}
 
-<!-- Favicon (add your favicon files to the assets folder) -->
+<!-- Academic-specific meta tags -->
+<meta name="citation_title" content="{% if page.layout == 'post' %}{{ page.title }}{% endif %}">
+<meta name="citation_author" content="李明辉">
+<meta name="citation_publication_date" content="{% if page.date %}{{ page.date | date: '%Y/%m/%d' }}{% endif %}">
+
+<!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
 
 <!-- Additional fonts for better Chinese display -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;700&display=swap" rel="stylesheet">
