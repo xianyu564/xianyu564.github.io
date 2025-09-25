@@ -3,53 +3,65 @@ layout: default
 title: "学术主页"
 ---
 
-# 欢迎访问我的学术主页
+# 欢迎访问张子阳的学术主页
 
 ## 研究主题
 
 <div class="research-topics">
   <div class="topic-card">
-    <h3>人工智能</h3>
-    <p>专注于机器学习、深度学习和自然语言处理的研究与应用。</p>
+    <h3>AI导航的计算生物医药</h3>
+    <p>结合人工智能与计算化学方法，专注于生物医学材料发现和药物设计。</p>
   </div>
   
   <div class="topic-card">
-    <h3>数据科学</h3>
-    <p>大数据分析、数据挖掘和统计建模方法的研究。</p>
+    <h3>3D生物打印技术</h3>
+    <p>糖尿病伤口护理的生物材料发现、光固化水凝胶开发和临床转化研究。</p>
   </div>
   
   <div class="topic-card">
-    <h3>计算机视觉</h3>
-    <p>图像处理、模式识别和计算机视觉算法的开发。</p>
+    <h3>计算化学与分子动力学</h3>
+    <p>蛋白质-小分子相互作用的量子化学计算、分子动力学仿真和高性能计算应用。</p>
   </div>
 </div>
 
 ## 代表性论文
 
+### 2025年
+
+- **Qualitative Artificial Intelligence and Quantitative Computational Chemistry for Personalized Diabetic Wound Healing**  
+  Zhang Ziyang (第一作者)  
+  *Cell Reports Medicine*, 2025 (已提交)  
+  [[PDF]](#) [[Code]](#)
+
+- **Scalable 2D Membranes for Near-perfect Separation of Hydrogenation/Dehydrogenation**  
+  Zhang Ziyang (第二作者)  
+  *Nature Materials*, 2025 (已提交)  
+  [[PDF]](#) [[Code]](#)
+
 ### 2024年
 
-- **论文标题一：基于深度学习的图像分类方法研究**  
-  作者姓名, 合作者姓名  
-  *会议/期刊名称*, 2024  
-  [[PDF]](#) [[DOI]](#) [[Code]](#)
+- **3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care**  
+  Zhang Ziyang  
+  *NUS PhD Dissertation*, 2024  
+  [[PDF]](#) [[摘要]](#)
 
-- **论文标题二：自然语言处理中的注意力机制优化**  
-  作者姓名, 合作者姓名  
-  *期刊名称*, 2024  
-  [[PDF]](#) [[DOI]](#) [[Code]](#)
+- **Enhancing X-ray Radiotherapy Sensitization with Multifunctional Nanoparticles**  
+  Zhang Ziyang (共通讯作者)  
+  *Small*, 2024  
+  [[PDF]](#) [[DOI]](#)
 
-### 2023年
+### 2021年
 
-- **论文标题三：多模态学习框架的设计与实现**  
-  作者姓名, 合作者姓名  
-  *会议名称*, 2023  
-  [[PDF]](#) [[DOI]](#) [[Code]](#)
+- **Deep spatial representation learning of polyamide nanofiltration membranes**  
+  Zhang Ziyang (第一作者)  
+  *Journal of Membrane Science*, 2021  
+  [[PDF]](#) [[Code]](#)
 
 ## 最新动态
 
-- **2024年9月**: 新论文被 ICML 2024 接收
-- **2024年8月**: 参加国际机器学习会议并做主题报告
-- **2024年7月**: 获得国家自然科学基金资助
+- **2024年12月**: 完成新加坡国立大学博士学位答辩
+- **2025年3月**: 创立长沙决明科技有限公司，担任创始人和首席技术官
+- **2025年9月**: 多篇论文向顶级期刊投稿 (Cell Reports Medicine, Nature Materials, Nature Communications)
 
 ---
 
