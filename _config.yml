@@ -1,8 +1,8 @@
 # Site settings
-title: "李明辉 - 学术主页"
-description: "人工智能与数据科学研究者，专注于机器学习、深度学习和计算机视觉"
-author: "李明辉"
-email: "lminghui@university.edu.cn"
+title: "学术主页"
+description: "个人学术研究主页"
+author: "Your Name"
+email: "your.email@domain.com"
 
 # Site URL
 url: "https://xianyu564.github.io"
@@ -34,18 +34,14 @@ navigation:
     url: /publications/
   - title: "项目"
     url: /projects/
-  - title: "研究影响力"
-    url: /research-metrics/
   - title: "博客"
     url: /blog/
 
 # Social media links
 social:
   github: "xianyu564"
-  google_scholar: "ABC123DEF456"
-  orcid: "0000-0000-0000-0000"
-  researchgate: "Li-Minghui-12345"
-  linkedin: "li-minghui-phd"
+  google_scholar: "your-scholar-id"
+  twitter: "your-twitter-handle"
 
 # Collections
 collections:

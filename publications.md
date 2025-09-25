@@ -13,139 +13,69 @@ permalink: /publications/
 ### 期刊论文
 
 <div id="paper-2024-1" class="publication-item">
-<strong>ExplainNet: 面向医疗图像分析的可解释深度学习框架</strong><br>
-<em>李明辉</em>, 张伟, 王丽娜, 陈强<br>
-<em>IEEE Transactions on Medical Imaging</em>, 2024, 43(8): 2891-2905<br>
-<strong>DOI:</strong> <a href="https://doi.org/10.1109/TMI.2024.3398745" target="_blank">10.1109/TMI.2024.3398745</a><br>
-<strong>影响因子:</strong> 10.6 &nbsp;&nbsp;&nbsp; <strong>引用数:</strong> 23<br>
-<strong>资源:</strong> [<a href="#" target="_blank">PDF</a>] [<a href="https://github.com/xianyu564/ExplainNet" target="_blank">代码</a>] [<a href="#" target="_blank">数据集</a>]<br>
-
-<details>
-<summary><strong>摘要</strong></summary>
-<p>本文提出了一种面向医疗图像分析的可解释深度学习框架ExplainNet，通过结合注意力机制和因果推理，实现了对医学图像诊断结果的可解释性分析。在三个大规模医疗数据集上的实验表明，该方法不仅保持了高精度，还能提供临床医生可理解的解释。</p>
-</details>
+<strong>基于深度学习的图像分类方法研究</strong><br>
+<em>作者姓名</em>, 合作者1, 合作者2<br>
+<em>中国科学：信息科学</em>, 2024, 54(8): 1234-1250<br>
+<strong>DOI:</strong> <a href="https://doi.org/10.1360/SSI-2024-0123" target="_blank">10.1360/SSI-2024-0123</a><br>
+<strong>资源:</strong> [<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">代码</a>] [<a href="#" target="_blank">数据集</a>]<br>
 
 <details>
 <summary><strong>BibTeX</strong></summary>
-<pre><code>@article{li2024explainnet,
-  title={ExplainNet: An Explainable Deep Learning Framework for Medical Image Analysis},
-  author={Li, Minghui and Zhang, Wei and Wang, Lina and Chen, Qiang},
-  journal={IEEE Transactions on Medical Imaging},
-  volume={43},
+<pre><code>@article{author2024image,
+  title={基于深度学习的图像分类方法研究},
+  author={作者姓名 and 合作者1 and 合作者2},
+  journal={中国科学：信息科学},
+  volume={54},
   number={8},
-  pages={2891--2905},
+  pages={1234--1250},
   year={2024},
-  publisher={IEEE},
-  doi={10.1109/TMI.2024.3398745}
+  publisher={科学出版社},
+  doi={10.1360/SSI-2024-0123}
 }</code></pre>
 </details>
 </div>
 
 <div id="paper-2024-2" class="publication-item">
-<strong>FedVision: 隐私保护的联邦学习在计算机视觉中的应用</strong><br>
-<em>李明辉</em>, 刘浩, 赵婷婷<br>
-<em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, 2024, 46(11): 7823-7838<br>
-<strong>DOI:</strong> <a href="https://doi.org/10.1109/TPAMI.2024.3405621" target="_blank">10.1109/TPAMI.2024.3405621</a><br>
-<strong>影响因子:</strong> 23.6 &nbsp;&nbsp;&nbsp; <strong>引用数:</strong> 47<br>
-<strong>资源:</strong> [<a href="#" target="_blank">PDF</a>] [<a href="https://github.com/xianyu564/FedVision" target="_blank">代码</a>] [<a href="#" target="_blank">补充材料</a>]<br>
-
-<details>
-<summary><strong>摘要</strong></summary>
-<p>联邦学习为解决数据隐私问题提供了新思路，但在计算机视觉任务中仍面临非独立同分布数据和模型异构性挑战。本文提出FedVision框架，通过自适应聚合策略和对比学习机制，显著提升了联邦视觉任务的性能。</p>
-</details>
+<strong>自然语言处理中的注意力机制优化</strong><br>
+<em>作者姓名</em>, 合作者1<br>
+<em>软件学报</em>, 2024, 35(6): 2678-2695<br>
+<strong>DOI:</strong> <a href="https://doi.org/10.13328/j.cnki.jos.007123" target="_blank">10.13328/j.cnki.jos.007123</a><br>
+<strong>资源:</strong> [<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">代码</a>]<br>
 
 <details>
 <summary><strong>BibTeX</strong></summary>
-<pre><code>@article{li2024fedvision,
-  title={FedVision: Privacy-Preserving Federated Learning for Computer Vision},
-  author={Li, Minghui and Liu, Hao and Zhao, Tingting},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  volume={46},
-  number={11},
-  pages={7823--7838},
+<pre><code>@article{author2024attention,
+  title={自然语言处理中的注意力机制优化},
+  author={作者姓名 and 合作者1},
+  journal={软件学报},
+  volume={35},
+  number={6},
+  pages={2678--2695},
   year={2024},
-  publisher={IEEE},
-  doi={10.1109/TPAMI.2024.3405621}
-}</code></pre>
-</details>
-</div>
-
-<div id="paper-2024-3" class="publication-item">
-<strong>多模态对比学习的统一理论框架</strong><br>
-<em>李明辉</em>, 杨青, 李思远<br>
-<em>Nature Machine Intelligence</em>, 2024, 6(5): 421-435<br>
-<strong>DOI:</strong> <a href="https://doi.org/10.1038/s42256-024-00821-2" target="_blank">10.1038/s42256-024-00821-2</a><br>
-<strong>影响因子:</strong> 25.9 &nbsp;&nbsp;&nbsp; <strong>引用数:</strong> 89<br>
-<strong>资源:</strong> [<a href="#" target="_blank">PDF</a>] [<a href="https://github.com/xianyu564/MultiContrastive" target="_blank">代码</a>] [<a href="#" target="_blank">在线演示</a>]<br>
-
-<details>
-<summary><strong>摘要</strong></summary>
-<p>本文从理论角度分析了多模态对比学习的收敛性和泛化能力，提出了统一的理论框架。该框架不仅解释了现有方法的成功原因，还指导设计了新的多模态学习算法，在多个基准测试中达到SOTA性能。</p>
-</details>
-
-<details>
-<summary><strong>BibTeX</strong></summary>
-<pre><code>@article{li2024multimodal,
-  title={A Unified Theoretical Framework for Multimodal Contrastive Learning},
-  author={Li, Minghui and Yang, Qing and Li, Siyuan},
-  journal={Nature Machine Intelligence},
-  volume={6},
-  number={5},
-  pages={421--435},
-  year={2024},
-  publisher={Nature Publishing Group},
-  doi={10.1038/s42256-024-00821-2}
+  publisher={科学出版社},
+  doi={10.13328/j.cnki.jos.007123}
 }</code></pre>
 </details>
 </div>
 
 ### 会议论文
 
-<div id="paper-2024-4" class="publication-item">
-<strong>MultiModal-GPT: 统一的多模态大语言模型</strong><br>
-<em>李明辉</em>, 张宇航, 王小明, Prof. Andrew Ng<br>
-<em>Neural Information Processing Systems (NeurIPS)</em>, 2024<br>
-<strong>接收率:</strong> 25.8% (2,666/10,325) &nbsp;&nbsp;&nbsp; <strong>引用数:</strong> 156<br>
-<strong>资源:</strong> [<a href="#" target="_blank">PDF</a>] [<a href="https://github.com/xianyu564/MultiModal-GPT" target="_blank">代码</a>] [<a href="#" target="_blank">Demo</a>] [<a href="#" target="_blank">海报</a>]<br>
-
-<details>
-<summary><strong>摘要</strong></summary>
-<p>本文提出MultiModal-GPT，一个统一的多模态大语言模型，能够同时处理文本、图像和音频输入。通过创新的跨模态注意力机制和分层预训练策略，在12个多模态基准测试中取得了SOTA结果。</p>
-</details>
+<div id="paper-2024-3" class="publication-item">
+<strong>Multi-Modal Learning Framework for Cross-Domain Applications</strong><br>
+<em>Your Name</em>, Collaborator A, Collaborator B<br>
+<em>Proceedings of the 41st International Conference on Machine Learning (ICML)</em>, 2024<br>
+<strong>DOI:</strong> <a href="#" target="_blank">Coming Soon</a><br>
+<strong>资源:</strong> [<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">Code</a>] [<a href="#" target="_blank">Slides</a>]<br>
 
 <details>
 <summary><strong>BibTeX</strong></summary>
-<pre><code>@inproceedings{li2024multimodal,
-  title={MultiModal-GPT: A Unified Multimodal Large Language Model},
-  author={Li, Minghui and Zhang, Yuhang and Wang, Xiaoming and Ng, Andrew},
-  booktitle={Advances in Neural Information Processing Systems},
-  volume={37},
+<pre><code>@inproceedings{yourname2024multimodal,
+  title={Multi-Modal Learning Framework for Cross-Domain Applications},
+  author={Your Name and Collaborator A and Collaborator B},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning},
+  pages={12345--12356},
   year={2024},
-  organization={Curran Associates, Inc.}
-}</code></pre>
-</details>
-</div>
-
-<div id="paper-2024-5" class="publication-item">
-<strong>CausalViT: 基于因果推理的视觉Transformer</strong><br>
-<em>李明辉</em>, 陈思雨, 林志强<br>
-<em>International Conference on Computer Vision (ICCV)</em>, 2024<br>
-<strong>接收率:</strong> 26.1% (2,214/8,486) &nbsp;&nbsp;&nbsp; <strong>引用数:</strong> 72<br>
-<strong>资源:</strong> [<a href="#" target="_blank">PDF</a>] [<a href="https://github.com/xianyu564/CausalViT" target="_blank">代码</a>] [<a href="#" target="_blank">视频演示</a>]<br>
-
-<details>
-<summary><strong>摘要</strong></summary>
-<p>将因果推理引入视觉Transformer，提出CausalViT架构。通过显式建模图像特征间的因果关系，实现了更好的可解释性和鲁棒性，在ImageNet和下游任务中均表现优异。</p>
-</details>
-
-<details>
-<summary><strong>BibTeX</strong></summary>
-<pre><code>@inproceedings{li2024causalvit,
-  title={CausalViT: Causal Vision Transformer for Robust Image Recognition},
-  author={Li, Minghui and Chen, Siyu and Lin, Zhiqiang},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  pages={12475--12485},
-  year={2024}
+  organization={PMLR}
 }</code></pre>
 </details>
 </div>
@@ -227,13 +157,9 @@ permalink: /publications/
 
 ## 统计信息
 
-- **总论文数**: 52篇
-- **期刊论文**: 28篇 (其中SCI一区18篇)
-- **会议论文**: 24篇 (其中CCF-A类15篇)
-- **第一作者论文**: 35篇
-- **通讯作者论文**: 17篇
-- **总引用数**: 3,127次 (Google Scholar)
-- **H指数**: 28
-- **i10指数**: 45
+- **总论文数**: 6篇
+- **期刊论文**: 4篇  
+- **会议论文**: 2篇
+- **第一作者论文**: 6篇
 
-更新时间：2024年12月18日
+更新时间：2024年9月18日
