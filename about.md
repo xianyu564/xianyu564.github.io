@@ -61,9 +61,10 @@ permalink: /about/
 
 ## 学术资料
 
-- [ORCID](https://orcid.org/your-orcid-id)
-- [LinkedIn](https://linkedin.com/in/your-profile)
+- [ORCID](https://orcid.org/0000-0002-0350-5958)
+- [LinkedIn]( https://www.linkedin.com/in/ziyang-zhang-83815b206/)
 - [GitHub](https://github.com/xianyu564)
+- [Web of Science](https://webofscience.com/wos/author/record/JDC-4596-2023)
 
 ## 简历下载
 
