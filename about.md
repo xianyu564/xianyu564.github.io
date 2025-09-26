@@ -13,9 +13,9 @@ permalink: /about/
 ## 教育背景
 
 - **哲学博士** - 生物医学工程系、药剂与药理科学系，新加坡国立大学 (2020年8月 - 2024年12月)
-  - 导师: Assoc. Prof. Raye Yeow, Prof. Pastorin Giorgia
+  - 导师: Assoc. Prof. Raye Yeow Chen-Hua 姚臣华, Prof. Pastorin Giorgia
 - **理学学士** - 化学系，华中科技大学 (2016年8月 - 2020年6月)  
-  - 导师: Prof. Zhao Qiang, Prof. Liao Rong-zhen, Prof. Gong Yuefa, Prof. Zhu Lihua, Prof. Chen Yu
+  - 导师: Prof. Zhao Qiang 赵强, Prof. Liao Rong-zhen 廖荣臻, Prof. Gong Yuefa 龚跃法, Prof. Zhu Lihua 朱丽华, Prof. Chen Yu 陈宇. 
 
 ## 工作经历
 
@@ -30,7 +30,7 @@ permalink: /about/
 
 ### 联培博士 | Pathnova Laboratories, 淡马锡生命科学实验室 (2020年8月 - 2022年11月)
 - 新加坡国家癌症中心，杜克大学-新加坡国立大学医学院
-- 在Dr. Ian Cheong和Assoc. Prof. Melvin Chua指导下进行研究工作
+- 在Dr. Ian Cheong Shing-Yi 张显义 和Assoc. Prof. Melvin Chua Lee Kiang 蔡立强 指导下进行研究工作
 
 ## 研究兴趣
 
