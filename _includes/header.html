@@ -29,7 +29,14 @@
           <span class="lang-current">EN</span>
         {% else %}
           <span class="lang-current">中文</span>
-          <a href="/en{{ page.url }}" class="lang-switch">EN</a>
+          {% assign en_url = '/en/' %}
+          {% for item in site.navigation_en %}
+            {% assign base_url = page.url | remove_first: '/en' %}
+            {% if item.url == base_url %}
+              {% assign en_url = item.url %}
+            {% endif %}
+          {% endfor %}
+          <a href="{{ en_url | relative_url }}" class="lang-switch">EN</a>
         {% endif %}
       </div>
       
