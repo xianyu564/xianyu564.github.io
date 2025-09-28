@@ -114,7 +114,7 @@ This page showcases my academic research projects, open source contributions, an
   </p>
   <p class="project-tech"><strong>Tech Stack:</strong> Python, GPT API, Neo4j, BioBERT, Natural Language Processing</p>
   <p class="project-links">
-    <a href="#" target="_blank">[Coming Soon]</a>
+    <span>[Coming Soon]</span>
   </p>
   <p class="project-funding"><strong>Applications:</strong> Drug discovery, personalized medicine, research hypothesis generation</p>
 </div>
