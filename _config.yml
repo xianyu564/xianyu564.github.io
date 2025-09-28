@@ -31,6 +31,21 @@ navigation:
   - title: "项目"
     url: /projects/
 
+# English Navigation
+navigation_en:
+  - title: "Home"
+    url: /en/
+  - title: "About"
+    url: /en/about/
+  - title: "Publications"
+    url: /en/publications/
+  - title: "Projects"
+    url: /en/projects/
+
+# Language settings
+languages: ["zh", "en"]
+default_lang: zh
+
 # Social media links
 social:
   github: "xianyu564"
