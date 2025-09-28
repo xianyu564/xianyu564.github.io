@@ -103,7 +103,21 @@ summary:focus {
 <!-- Meta tags for better SEO -->
 <meta name="author" content="{{ site.author | default: site.title }}">
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-<meta name="keywords" content="学术研究,人工智能,机器学习,深度学习,数据科学,计算机视觉,自然语言处理">
+{% if page.lang == 'en' %}
+<meta name="keywords" content="academic research,artificial intelligence,machine learning,deep learning,data science,computer vision,natural language processing,computational chemistry,biomedical engineering">
+{% else %}
+<meta name="keywords" content="学术研究,人工智能,机器学习,深度学习,数据科学,计算机视觉,自然语言处理,计算化学,生物医学工程">
+{% endif %}
+
+<!-- Language alternate tags for SEO -->
+{% if page.lang == 'en' %}
+<link rel="alternate" hreflang="zh" href="{{ page.url | replace: '/en/', '/' | absolute_url }}" />
+<link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}" />
+{% else %}
+<link rel="alternate" hreflang="zh" href="{{ page.url | absolute_url }}" />
+<link rel="alternate" hreflang="en" href="{{ '/en' | append: page.url | absolute_url }}" />
+{% endif %}
+<link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}" />
 
 <!-- Open Graph tags for social media -->
 <meta property="og:title" content="{{ page.title | default: site.title | escape }}">

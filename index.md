@@ -66,3 +66,7 @@ title: "学术主页"
 ---
 
 更多信息请查看 [关于我]({{ site.baseurl }}/about/) 和 [完整论文列表]({{ site.baseurl }}/publications/)。
+
+<div class="language-notice">
+📍 <em>This website is also available in <a href="{{ site.baseurl }}/en/">English</a></em>
+</div>

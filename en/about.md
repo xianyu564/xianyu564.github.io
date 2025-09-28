@@ -41,6 +41,28 @@ I am Zhang Ziyang, a researcher specializing in AI-guided computational biomedic
 - **Machine Learning Applications in Biomedicine**: Knowledge graph construction, named entity recognition, and relation extraction
 - **Membrane Separation Technology**: Structure-property relationship studies of nanofiltration membranes and 2D membrane materials
 
+## Contact Information
+
+<div class="contact-info">
+<strong>Email:</strong> z_zz@u.nus.edu<br>
+<strong>Phone:</strong> +86-19894359122, +65-89428966<br>
+<strong>Address:</strong> Changsha, Hunan, China<br>
+<strong>Research Focus:</strong> AI-Guided Computational Biomedicine, 3D Bioprinting, Decision Intelligence
+</div>
+
+## Honors & Awards
+
+- **PhD Degree**: Biomedical Engineering & Pharmaceutical Sciences, National University of Singapore (2024)
+- **Multiple Invention Patents**: Including energy storage traction ejection technology, spectral calibration technology, etc.
+- **Software Copyrights**: 5 AI risk decision system related software copyrights (2025)
+- **Academic Service**: Peer reviewer for Journal of Chemical Theory and Computation
+
+## Academic Service
+
+- **Journal Reviewer**: Journal of Chemical Theory and Computation (ACS, IF=5.5)
+- **Research Collaborations**: Collaborating with multiple colleges at NUS, Huazhong University of Science and Technology, Central South University Xiangya School of Medicine, etc.
+- **Technical Expertise**: High-Performance Computing (HPC), Quantum Chemical Calculations, Molecular Dynamics Simulations, Machine Learning Modeling
+
 ## Academic Resources
 
 - [ORCID](https://orcid.org/0000-0002-0350-5958)
@@ -52,14 +74,6 @@ I am Zhang Ziyang, a researcher specializing in AI-guided computational biomedic
 
 - [English CV (PDF)](Zhang_Ziyang_CV_Sept2025.pdf)
 - [中文简历 (PDF)](张子阳个人简历，2025年9月.pdf)
-
-## Contact Information
-
-<div class="contact-info">
-<strong>Email:</strong> z_zz@u.nus.edu<br>
-<strong>Location:</strong> Singapore / Changsha, China<br>
-<strong>Research Focus:</strong> AI-Guided Computational Biomedicine, 3D Bioprinting, Decision Intelligence
-</div>
 
 ---
 

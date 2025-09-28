@@ -68,3 +68,7 @@ permalink: /en/
 ---
 
 For more information, please visit [About Me]({{ site.baseurl }}/en/about/) and [Complete Publications List]({{ site.baseurl }}/en/publications/).
+
+<div class="language-notice">
+📍 <em>本网站同时提供<a href="{{ site.baseurl }}/">中文版本</a></em>
+</div>
