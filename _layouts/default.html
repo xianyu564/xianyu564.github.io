@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'zh-CN' }}">
+<html lang="{% if page.lang %}{{ page.lang }}{% elsif site.lang %}{{ site.lang }}{% else %}zh-CN{% endif %}">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,68 +19,27 @@
 <body>
   {% include header.html %}
   
-  <div class="wrapper">
-    <section>
-      {{ content }}
-    </section>
-  </div>
+  <main class="main-content">
+    <div class="wrapper">
+      <article class="page-content">
+        {{ content }}
+      </article>
+    </div>
+  </main>
   
   <footer class="site-footer">
     <div class="wrapper">
       <div class="footer-content">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author | default: site.title }}. All rights reserved.</p>
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author | default: site.title }}. 
+          {% if page.lang == 'en' %}All rights reserved.{% else %}保留所有权利。{% endif %}
+        </p>
         <p>
           <a href="{{ '/feed.xml' | relative_url }}">RSS</a> |
           <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a> |
-          Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+          {% if page.lang == 'en' %}Powered by{% else %}由{% endif %} <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> {% if page.lang != 'en' %}强力驱动{% endif %}
         </p>
       </div>
     </div>
   </footer>
-
-  <style>
-    .wrapper {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    section {
-      margin: 20px 0;
-    }
-    
-    .site-footer {
-      border-top: 1px solid #e8e8e8;
-      background-color: #fdfdfd;
-      padding: 20px 0;
-      margin-top: 40px;
-      text-align: center;
-      color: #666;
-      font-size: 0.9em;
-    }
-    
-    .site-footer a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-    
-    .site-footer a:hover {
-      text-decoration: underline;
-    }
-    
-    .footer-content p {
-      margin: 5px 0;
-    }
-    
-    /* Add Chinese typography support */
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-  </style>
 </body>
 </html>

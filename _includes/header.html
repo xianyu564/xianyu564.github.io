@@ -2,17 +2,43 @@
   <div class="wrapper">
     <div class="site-nav">
       <div class="site-title">
-        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <a href="{{ site.baseurl }}{% if page.lang == 'en' %}/en/{% else %}/{% endif %}">{{ site.title }}</a>
       </div>
       
       <nav class="main-nav">
-        {% for item in site.navigation %}
-          <a href="{{ item.url | relative_url }}" 
-             {% if page.url == item.url %}class="current"{% endif %}>
-            {{ item.title }}
-          </a>
-        {% endfor %}
+        {% if page.lang == 'en' %}
+          {% for item in site.navigation_en %}
+            <a href="{{ item.url | relative_url }}" 
+               {% if page.url == item.url %}class="current"{% endif %}>
+              {{ item.title }}
+            </a>
+          {% endfor %}
+        {% else %}
+          {% for item in site.navigation %}
+            <a href="{{ item.url | relative_url }}" 
+               {% if page.url == item.url %}class="current"{% endif %}>
+              {{ item.title }}
+            </a>
+          {% endfor %}
+        {% endif %}
       </nav>
+      
+      <div class="language-nav">
+        {% if page.lang == 'en' %}
+          <a href="{{ page.url | replace: '/en/', '/' }}" class="lang-switch">中文</a>
+          <span class="lang-current">EN</span>
+        {% else %}
+          <span class="lang-current">中文</span>
+          {% assign en_url = '/en/' %}
+          {% for item in site.navigation_en %}
+            {% assign base_url = page.url | remove_first: '/en' %}
+            {% if item.url == base_url %}
+              {% assign en_url = item.url %}
+            {% endif %}
+          {% endfor %}
+          <a href="{{ en_url | relative_url }}" class="lang-switch">EN</a>
+        {% endif %}
+      </div>
       
       <div class="social-links">
         {% if site.social.github %}
@@ -105,6 +131,34 @@
   color: #0366d6;
 }
 
+.language-nav {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.lang-switch {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.lang-switch:hover {
+  color: #0366d6;
+  background-color: #f6f8fa;
+}
+
+.lang-current {
+  color: #0366d6;
+  font-weight: 500;
+  font-size: 0.9em;
+  padding: 4px 8px;
+}
+
 .icon {
   display: block;
 }
@@ -121,8 +175,15 @@
     justify-content: center;
   }
   
-  .social-links {
+  .language-nav {
     order: 2;
+    justify-content: center;
+    margin-right: 0;
+  }
+  
+  .social-links {
+    order: 3;
+    justify-content: center;
   }
 }
 </style>
