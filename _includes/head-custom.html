@@ -1,74 +1,41 @@
-<!-- Custom CSS for Chinese typography and site styling -->
+<!-- Custom CSS for enhanced styling -->
 <style>
-/* Research topic cards */
-.research-topics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin: 30px 0;
-}
-
-.topic-card {
-  border: 1px solid #e1e5e9;
-  border-radius: 8px;
-  padding: 20px;
-  background: #f8f9fa;
-  transition: box-shadow 0.3s ease;
-}
-
-.topic-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.topic-card h3 {
-  margin-top: 0;
-  color: #2c3e50;
-}
-
-/* Publication items */
-.publication-item {
-  margin-bottom: 30px;
-  padding: 20px;
-  border: 1px solid #e1e5e9;
-  border-radius: 5px;
-  background: #fafafa;
-}
-
-.publication-item strong {
-  color: #2c3e50;
-}
-
-.publication-item em {
-  color: #666;
-}
-
+/* Publication items enhancements */
 .publication-item details {
-  margin-top: 10px;
+  margin-top: var(--space-sm);
 }
 
 .publication-item summary {
   cursor: pointer;
-  font-weight: bold;
-  color: #0366d6;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: var(--space-xs) 0;
+  transition: color 0.2s ease;
+}
+
+.publication-item summary:hover {
+  color: var(--primary-light);
 }
 
 .publication-item pre {
-  background: #f1f3f4;
-  padding: 15px;
-  border-radius: 5px;
-  font-size: 0.9em;
+  background: var(--bg-secondary);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
   overflow-x: auto;
+  border: 1px solid var(--border-light);
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  line-height: 1.6;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .research-topics {
-    grid-template-columns: 1fr;
-  }
-  
-  .wrapper {
-    padding: 10px;
-  }
+/* Code highlighting */
+code {
+  background: var(--bg-secondary);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--accent-color);
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
 }
 
 /* Print styles */
@@ -83,15 +50,93 @@
     max-width: none;
     margin: 0;
     padding: 0;
+    box-shadow: none;
+  }
+  
+  body {
+    background: white;
+  }
+  
+  a {
+    color: var(--text-primary);
+    border-bottom: none;
   }
 }
 
 /* Accessibility improvements */
 a:focus,
 button:focus,
-summary:focus {
-  outline: 2px solid #0366d6;
+summary:focus,
+.project-links a:focus {
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--primary-light);
+  color: var(--bg-primary);
+}
+
+::-moz-selection {
+  background-color: var(--primary-light);
+  color: var(--bg-primary);
+}
+
+/* Horizontal rule styling */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+  margin: var(--space-xl) 0;
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: var(--space-md);
+  margin: var(--space-lg) 0;
+  color: var(--text-secondary);
+  font-style: italic;
+  background: var(--bg-secondary);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-lg) 0;
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+th, td {
+  padding: var(--space-sm) var(--space-md);
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+th {
+  background: var(--primary-bg);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+tr:hover {
+  background: var(--bg-secondary);
 }
 
 /* Dark mode support (if desired in future) */
