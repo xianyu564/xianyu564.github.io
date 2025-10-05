@@ -500,6 +500,15 @@ li::marker {
     border-radius: var(--radius-md);
   }
   
+  .hero-section {
+    padding: var(--space-lg) var(--space-md);
+    margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-lg);
+  }
+  
+  .hero-section p {
+    font-size: 1rem !important;
+  }
+  
   .research-topics {
     grid-template-columns: 1fr;
     gap: var(--space-md);
@@ -512,6 +521,10 @@ li::marker {
   
   .topic-card, .project-card {
     padding: var(--space-lg);
+  }
+  
+  .topic-icon {
+    font-size: 2.5rem;
   }
   
   .project-links a {
@@ -544,6 +557,20 @@ li::marker {
     padding: var(--space-md);
     border-radius: 0;
     margin: 0;
+  }
+  
+  .hero-section {
+    padding: var(--space-md);
+    margin: calc(-1 * var(--space-md)) calc(-1 * var(--space-md)) var(--space-md);
+    border-radius: 0;
+  }
+  
+  .hero-section p {
+    font-size: 0.938rem !important;
+  }
+  
+  .topic-icon {
+    font-size: 2rem;
   }
   
   .main-content {
