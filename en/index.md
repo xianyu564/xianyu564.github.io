@@ -5,7 +5,12 @@ lang: en
 permalink: /en/
 ---
 
-# Welcome to Zhang Ziyang's Academic Homepage
+<div class="hero-section">
+  <h1>Welcome to Zhang Ziyang's Academic Homepage</h1>
+  <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 0; position: relative; z-index: 1;">AI-Guided Computational Biomedicine & Decision Intelligence Researcher | Founder & CTO of Changsha Jueming Technology</p>
+</div>
+
+<hr class="section-divider">
 
 ## Research Areas
 
@@ -25,6 +30,8 @@ permalink: /en/
     <p>Quantum chemical calculations of protein-small molecule interactions, molecular dynamics simulations, and high-performance computing applications.</p>
   </div>
 </div>
+
+<hr class="section-divider">
 
 ## Representative Publications
 
@@ -58,6 +65,8 @@ permalink: /en/
   Zhang Ziyang (First Author)  
   *Journal of Membrane Science*, 2021  
   [[PDF]](#) [[Code]](#)
+
+<hr class="section-divider">
 
 ## Recent Updates
 

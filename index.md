@@ -3,7 +3,12 @@ layout: default
 title: "学术主页"
 ---
 
-# 欢迎访问张子阳的学术主页
+<div class="hero-section">
+  <h1>欢迎访问张子阳的学术主页</h1>
+  <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 0; position: relative; z-index: 1;">AI导航的计算生物医药与决策智能研究者 | 长沙决明科技创始人 & CTO</p>
+</div>
+
+<hr class="section-divider">
 
 ## 研究主题
 
@@ -23,6 +28,8 @@ title: "学术主页"
     <p>蛋白质-小分子相互作用的量子化学计算、分子动力学仿真和高性能计算应用。</p>
   </div>
 </div>
+
+<hr class="section-divider">
 
 ## 代表性论文
 
@@ -56,6 +63,8 @@ title: "学术主页"
   Zhang Ziyang (第一作者)  
   *Journal of Membrane Science*, 2021  
   [[PDF]](#) [[Code]](#)
+
+<hr class="section-divider">
 
 ## 最新动态
 
