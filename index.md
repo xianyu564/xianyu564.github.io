@@ -14,16 +14,19 @@ title: "学术主页"
 
 <div class="research-topics">
   <div class="topic-card">
+    <div class="topic-icon">🤖</div>
     <h3>AI导航的计算生物医药</h3>
     <p>结合人工智能与计算化学方法，专注于生物医学材料发现和药物设计。</p>
   </div>
   
   <div class="topic-card">
+    <div class="topic-icon">🖨️</div>
     <h3>3D生物打印技术</h3>
     <p>糖尿病伤口护理的生物材料发现、光固化水凝胶开发和临床转化研究。</p>
   </div>
   
   <div class="topic-card">
+    <div class="topic-icon">⚗️</div>
     <h3>计算化学与分子动力学</h3>
     <p>蛋白质-小分子相互作用的量子化学计算、分子动力学仿真和高性能计算应用。</p>
   </div>
@@ -68,9 +71,20 @@ title: "学术主页"
 
 ## 最新动态
 
-- **2024年12月**: 完成新加坡国立大学博士学位答辩
-- **2025年3月**: 创立长沙决明科技有限公司，担任创始人和首席技术官
-- **2025年9月**: 多篇论文向顶级期刊投稿 (Cell Reports Medicine, Nature Materials, Nature Communications)
+<div class="updates-list">
+  <div class="update-item">
+    <span class="update-date">🎓 2024年12月</span>
+    <span class="update-content">完成新加坡国立大学博士学位答辩</span>
+  </div>
+  <div class="update-item">
+    <span class="update-date">🚀 2025年3月</span>
+    <span class="update-content">创立长沙决明科技有限公司，担任创始人和首席技术官</span>
+  </div>
+  <div class="update-item">
+    <span class="update-date">📝 2025年9月</span>
+    <span class="update-content">多篇论文向顶级期刊投稿 (Cell Reports Medicine, Nature Materials, Nature Communications)</span>
+  </div>
+</div>
 
 ---
 

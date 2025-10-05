@@ -16,16 +16,19 @@ permalink: /en/
 
 <div class="research-topics">
   <div class="topic-card">
+    <div class="topic-icon">🤖</div>
     <h3>AI-Guided Computational Biomedicine</h3>
     <p>Combining artificial intelligence with computational chemistry methods, focusing on biomedical materials discovery and drug design.</p>
   </div>
   
   <div class="topic-card">
+    <div class="topic-icon">🖨️</div>
     <h3>3D Bioprinting Technology</h3>
     <p>Biomaterial discovery for diabetic wound care, photocurable hydrogel development, and clinical translation research.</p>
   </div>
   
   <div class="topic-card">
+    <div class="topic-icon">⚗️</div>
     <h3>Computational Chemistry & Molecular Dynamics</h3>
     <p>Quantum chemical calculations of protein-small molecule interactions, molecular dynamics simulations, and high-performance computing applications.</p>
   </div>
@@ -70,9 +73,20 @@ permalink: /en/
 
 ## Recent Updates
 
-- **December 2024**: Completed PhD defense at National University of Singapore
-- **March 2025**: Founded Changsha Jueming Technology Co., Ltd. as Founder and CTO
-- **September 2025**: Multiple papers submitted to top-tier journals (Cell Reports Medicine, Nature Materials, Nature Communications)
+<div class="updates-list">
+  <div class="update-item">
+    <span class="update-date">🎓 December 2024</span>
+    <span class="update-content">Completed PhD defense at National University of Singapore</span>
+  </div>
+  <div class="update-item">
+    <span class="update-date">🚀 March 2025</span>
+    <span class="update-content">Founded Changsha Jueming Technology Co., Ltd. as Founder and CTO</span>
+  </div>
+  <div class="update-item">
+    <span class="update-date">📝 September 2025</span>
+    <span class="update-content">Multiple papers submitted to top-tier journals (Cell Reports Medicine, Nature Materials, Nature Communications)</span>
+  </div>
+</div>
 
 ---
 
