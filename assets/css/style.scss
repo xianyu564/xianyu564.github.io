@@ -632,6 +632,24 @@ li::marker {
     padding: var(--space-md);
   }
   
+  .publication-item {
+    padding: var(--space-md);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .publication-item strong {
+    font-size: 1rem;
+  }
+  
+  .publication-year h3 {
+    font-size: 1.125rem;
+  }
+  
+  .publication-links a {
+    font-size: 0.813rem;
+    padding: 3px 10px;
+  }
+  
   h1 {
     font-size: 1.5rem;
     padding-bottom: var(--space-xs);
@@ -640,6 +658,7 @@ li::marker {
   h2 {
     padding-left: var(--space-sm);
     font-size: 1.25rem;
+    margin-top: var(--space-xl);
   }
   
   h3 {
@@ -656,6 +675,10 @@ li::marker {
   
   .research-topics, .projects-grid {
     gap: var(--space-sm);
+  }
+  
+  .update-item {
+    padding: var(--space-sm);
   }
 }
 
@@ -810,11 +833,21 @@ li::marker {
 @media (max-width: 768px) {
   .update-item {
     flex-direction: column;
+    padding: var(--space-md);
   }
   
   .update-date {
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-sm);
+    margin-right: 0;
     min-width: auto;
+  }
+  
+  .publication-item {
+    padding: var(--space-md);
+  }
+  
+  .publication-year h3 {
+    font-size: 1.25rem;
   }
 }
 
