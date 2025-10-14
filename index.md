@@ -36,36 +36,69 @@ title: "学术主页"
 
 ## 代表性论文
 
-### 2025年
+<div class="publications-container">
+  <div class="publication-year">
+    <h3>2025年</h3>
+  </div>
+  
+  <div class="publication-item">
+    <strong>Qualitative Artificial Intelligence and Quantitative Computational Chemistry for Personalized Diabetic Wound Healing</strong><br>
+    Zhang Ziyang (第一作者)<br>
+    <em>Cell Reports Medicine</em>, 2025 (已提交)<br>
+    <div class="publication-links">
+      <a href="#">PDF</a>
+      <a href="#">Code</a>
+    </div>
+  </div>
 
-- **Qualitative Artificial Intelligence and Quantitative Computational Chemistry for Personalized Diabetic Wound Healing**  
-  Zhang Ziyang (第一作者)  
-  *Cell Reports Medicine*, 2025 (已提交)  
-  [[PDF]](#) [[Code]](#)
+  <div class="publication-item">
+    <strong>Scalable 2D Membranes for Near-perfect Separation of Hydrogenation/Dehydrogenation</strong><br>
+    Zhang Ziyang (第二作者)<br>
+    <em>Nature Materials</em>, 2025 (已提交)<br>
+    <div class="publication-links">
+      <a href="#">PDF</a>
+      <a href="#">Code</a>
+    </div>
+  </div>
 
-- **Scalable 2D Membranes for Near-perfect Separation of Hydrogenation/Dehydrogenation**  
-  Zhang Ziyang (第二作者)  
-  *Nature Materials*, 2025 (已提交)  
-  [[PDF]](#) [[Code]](#)
+  <div class="publication-year">
+    <h3>2024年</h3>
+  </div>
 
-### 2024年
+  <div class="publication-item">
+    <strong>3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care</strong><br>
+    Zhang Ziyang<br>
+    <em>NUS PhD Dissertation</em>, 2024<br>
+    <div class="publication-links">
+      <a href="#">PDF</a>
+      <a href="#">摘要</a>
+    </div>
+  </div>
 
-- **3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care**  
-  Zhang Ziyang  
-  *NUS PhD Dissertation*, 2024  
-  [[PDF]](#) [[摘要]](#)
+  <div class="publication-item">
+    <strong>Enhancing X-ray Radiotherapy Sensitization with Multifunctional Nanoparticles</strong><br>
+    Zhang Ziyang (共通讯作者)<br>
+    <em>Small</em>, 2024<br>
+    <div class="publication-links">
+      <a href="#">PDF</a>
+      <a href="#">DOI</a>
+    </div>
+  </div>
 
-- **Enhancing X-ray Radiotherapy Sensitization with Multifunctional Nanoparticles**  
-  Zhang Ziyang (共通讯作者)  
-  *Small*, 2024  
-  [[PDF]](#) [[DOI]](#)
+  <div class="publication-year">
+    <h3>2021年</h3>
+  </div>
 
-### 2021年
-
-- **Deep spatial representation learning of polyamide nanofiltration membranes**  
-  Zhang Ziyang (第一作者)  
-  *Journal of Membrane Science*, 2021  
-  [[PDF]](#) [[Code]](#)
+  <div class="publication-item">
+    <strong>Deep spatial representation learning of polyamide nanofiltration membranes</strong><br>
+    Zhang Ziyang (第一作者)<br>
+    <em>Journal of Membrane Science</em>, 2021<br>
+    <div class="publication-links">
+      <a href="#">PDF</a>
+      <a href="#">Code</a>
+    </div>
+  </div>
+</div>
 
 <hr class="section-divider">
 
