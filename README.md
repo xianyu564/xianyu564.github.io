@@ -22,8 +22,8 @@ I am **Zhang Ziyang (张子阳)**, a researcher specializing in **AI-Guided Comp
 ### 💼 Current Position
 
 **Founder & Chief Technology Officer**  
-[Changsha Jueming Technology Co., Ltd.](https://xianyu564.github.io) (2025 - Present)
-- Leading the development of Xiangduilun (象对论) APP and website
+[Changsha Jue-Ming Technology Co., Ltd.](https://xianyu564.github.io) (2025 - Present)
+- Leading the development of Elephenotype (象对论) APP and website
 - Developing AI-powered risk decision systems
 - Digitalization of traditional Chinese culture tools
 
