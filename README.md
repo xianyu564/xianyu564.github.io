@@ -46,10 +46,13 @@ I am **Zhang Ziyang (张子阳)**, a researcher specializing in **AI-Guided Comp
 
 #### 2025
 - **Qualitative Artificial Intelligence and Quantitative Computational Chemistry for Personalized Diabetic Wound Healing**  
-  Zhang Ziyang (First Author) | *Cell Reports Medicine*, 2025 (Submitted)
+  Zhang Ziyang (First Author) | *Interdisciplinary Medicine*, 2025 (Submitted)
 
 - **Scalable 2D Membranes for Near-perfect Separation of Hydrogenation/Dehydrogenation**  
   Zhang Ziyang (Second Author) | *Nature Materials*, 2025 (Submitted)
+
+- **IKBKE is a β-Catenin Kinase that Regulates Mesenchymal Stem Cell Differentiation**  
+  Zhang Ziyang (Second Author) | *Nature Communications*, 2025 (Submitted)
 
 #### 2024
 - **3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care**  
