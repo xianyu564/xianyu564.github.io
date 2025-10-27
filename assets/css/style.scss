@@ -402,6 +402,53 @@ h3 {
   margin: var(--space-xl) 0;
 }
 
+.publication-summary {
+  background: linear-gradient(135deg, rgba(21, 101, 192, 0.05), rgba(245, 124, 0, 0.05));
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  margin: var(--space-xl) 0 var(--space-xxl) 0;
+  border: 1px solid rgba(21, 101, 192, 0.1);
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-md);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+  margin-bottom: var(--space-xs);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
 .publication-year {
   margin: var(--space-xl) 0 var(--space-md) 0;
 }
@@ -500,6 +547,112 @@ h3 {
   border-radius: var(--radius-md);
   margin: var(--space-md) 0;
   border: 1px solid var(--border-light);
+}
+
+/* About page intro */
+.about-intro {
+  background: linear-gradient(135deg, rgba(21, 101, 192, 0.08), rgba(245, 124, 0, 0.08));
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: var(--space-xl) 0;
+  border: 1px solid rgba(21, 101, 192, 0.1);
+}
+
+/* CV Summary on homepage */
+.cv-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-lg);
+  margin: var(--space-xl) 0;
+}
+
+.cv-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  border: 1px solid rgba(21, 101, 192, 0.1);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.cv-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+
+.cv-item strong {
+  display: block;
+  color: var(--primary-color);
+  font-size: 0.938rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.cv-item br + text,
+.cv-item strong + br + text {
+  color: var(--text-secondary);
+  font-size: 0.938rem;
+  line-height: 1.6;
+}
+
+/* Achievement stats */
+.achievement-stats {
+  margin: var(--space-xl) 0;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.stat-box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85));
+  border: 1px solid rgba(21, 101, 192, 0.1);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+.stat-title {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-xs);
+}
+
+.stat-detail {
+  font-size: 0.813rem;
+  color: var(--text-tertiary);
+  line-height: 1.5;
 }
 
 /* Better link styling */
