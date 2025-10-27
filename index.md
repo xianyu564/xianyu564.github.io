@@ -44,7 +44,7 @@ title: "学术主页"
   <div class="publication-item">
     <strong>Qualitative Artificial Intelligence and Quantitative Computational Chemistry for Personalized Diabetic Wound Healing</strong><br>
     Zhang Ziyang (第一作者)<br>
-    <em>Cell Reports Medicine</em>, 2025 (已提交)<br>
+    <em>Interdisciplinary Medicine</em>, 2025 (已提交)<br>
     <div class="publication-links">
       <a href="#">PDF</a>
       <a href="#">Code</a>

@@ -4,16 +4,37 @@ title: "发表论文"
 permalink: /publications/
 ---
 
-# 发表论文
+# 发表论文 / Publications
 
-本页面包含我的所有学术发表，按年份排序。每篇论文都提供了完整的引用信息、DOI链接和相关资源。
+<div class="publication-summary">
+  <div class="summary-stats">
+    <div class="stat-item">
+      <span class="stat-number">12</span>
+      <span class="stat-label">总论文数</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">4</span>
+      <span class="stat-label">第一作者</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">5</span>
+      <span class="stat-label">在投稿件</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">3</span>
+      <span class="stat-label">发明专利</span>
+    </div>
+  </div>
+</div>
+
+本页面包含我的所有学术发表，按年份倒序排列。每篇论文都提供了完整的引用信息和相关资源链接。
 
 ## 2025年
 
 <div id="paper-2025-1" class="publication-item">
 <strong>Qualitative Artificial Intelligence and Quantitative Computational Chemistry for Personalized Diabetic Wound Healing</strong><br>
 <em>Zhang Ziyang</em> (第一作者)<br>
-<em>Cell Reports Medicine</em>, 2025 (已提交)<br>
+<em>Interdisciplinary Medicine</em>, 2025 (已提交)<br>
 <strong>资源:</strong> [<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">代码</a>]<br>
 
 <details>
