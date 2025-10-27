@@ -34,6 +34,29 @@ title: "学术主页"
 
 <hr class="section-divider">
 
+## 学术概况
+
+<div class="cv-summary">
+  <div class="cv-item">
+    <strong>现任职位</strong><br>
+    长沙决明科技有限公司 创始人&首席技术官
+  </div>
+  <div class="cv-item">
+    <strong>最高学历</strong><br>
+    新加坡国立大学 生物医学工程 哲学博士 (2024)
+  </div>
+  <div class="cv-item">
+    <strong>研究方向</strong><br>
+    AI导航的计算生物医药、3D生物打印、决策智能
+  </div>
+  <div class="cv-item">
+    <strong>学术服务</strong><br>
+    Journal of Chemical Theory and Computation (JCTC) 同行评审专家
+  </div>
+</div>
+
+<hr class="section-divider">
+
 ## 代表性论文
 
 <div class="publications-container">
@@ -55,6 +78,16 @@ title: "学术主页"
     <strong>Scalable 2D Membranes for Near-perfect Separation of Hydrogenation/Dehydrogenation</strong><br>
     Zhang Ziyang (第二作者)<br>
     <em>Nature Materials</em>, 2025 (已提交)<br>
+    <div class="publication-links">
+      <a href="#">PDF</a>
+      <a href="#">Code</a>
+    </div>
+  </div>
+
+  <div class="publication-item">
+    <strong>IKBKE is a β-Catenin Kinase that Regulates Mesenchymal Stem Cell Differentiation</strong><br>
+    Zhang Ziyang (第二作者)<br>
+    <em>Nature Communications</em>, 2025 (已提交)<br>
     <div class="publication-links">
       <a href="#">PDF</a>
       <a href="#">Code</a>
@@ -115,7 +148,7 @@ title: "学术主页"
   </div>
   <div class="update-item">
     <span class="update-date">📝 2025年9月</span>
-    <span class="update-content">多篇论文向顶级期刊投稿 (Cell Reports Medicine, Nature Materials, Nature Communications)</span>
+    <span class="update-content">多篇论文向顶级期刊投稿 (Interdisciplinary Medicine, Nature Materials, Nature Communications)</span>
   </div>
 </div>
 

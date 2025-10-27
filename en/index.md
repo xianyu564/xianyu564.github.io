@@ -36,18 +36,46 @@ permalink: /en/
 
 <hr class="section-divider">
 
+## Academic Profile
+
+<div class="cv-summary">
+  <div class="cv-item">
+    <strong>Current Position</strong><br>
+    Founder & CTO, Changsha Jueming Technology Co., Ltd.
+  </div>
+  <div class="cv-item">
+    <strong>Education</strong><br>
+    Ph.D. in Biomedical Engineering, National University of Singapore (2024)
+  </div>
+  <div class="cv-item">
+    <strong>Research Focus</strong><br>
+    AI-Guided Computational Biomedicine, 3D Bioprinting, Decision Intelligence
+  </div>
+  <div class="cv-item">
+    <strong>Academic Service</strong><br>
+    Peer Reviewer for Journal of Chemical Theory and Computation (JCTC)
+  </div>
+</div>
+
+<hr class="section-divider">
+
 ## Representative Publications
 
 ### 2025
 
 - **Qualitative Artificial Intelligence and Quantitative Computational Chemistry for Personalized Diabetic Wound Healing**  
   Zhang Ziyang (First Author)  
-  *Cell Reports Medicine*, 2025 (Submitted)  
+  *Interdisciplinary Medicine*, 2025 (Submitted)  
   [[PDF]](#) [[Code]](#)
 
 - **Scalable 2D Membranes for Near-perfect Separation of Hydrogenation/Dehydrogenation**  
   Zhang Ziyang (Second Author)  
   *Nature Materials*, 2025 (Submitted)  
+  [[PDF]](#) [[Code]](#)
+
+- **IKBKE is a β-Catenin Kinase that Regulates Mesenchymal Stem Cell Differentiation**  
+  Zhang Ziyang (Second Author)  
+  *Nature Communications*, 2025 (Submitted)  
   [[PDF]](#) [[Code]](#)
 
 ### 2024
@@ -84,7 +112,7 @@ permalink: /en/
   </div>
   <div class="update-item">
     <span class="update-date">📝 September 2025</span>
-    <span class="update-content">Multiple papers submitted to top-tier journals (Cell Reports Medicine, Nature Materials, Nature Communications)</span>
+    <span class="update-content">Multiple papers submitted to top-tier journals (Interdisciplinary Medicine, Nature Materials, Nature Communications)</span>
   </div>
 </div>
 
