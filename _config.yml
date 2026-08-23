@@ -59,6 +59,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
+  - docs/
 
 safe: false
 incremental: false
