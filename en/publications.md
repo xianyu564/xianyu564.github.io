@@ -18,7 +18,7 @@ permalink: /en/publications/
 
 {% for paper in pubs.published %}
 <div class="publication-item">
-<strong>{{ paper.title }}</strong><br>
+<strong>{% if paper.url %}<a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</strong><br>
 <em>{{ paper.venue }}</em> · {{ paper.role_en }} · {{ paper.year }}
 {% if paper.highlight_en %}<br><span class="cv-detail">{{ paper.highlight_en }}</span>{% endif %}
 <div class="publication-links">
