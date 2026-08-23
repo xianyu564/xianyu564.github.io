@@ -80,10 +80,10 @@ title: "主页"
 <div class="cv-list">
 {% for pub in pubs.published %}
 <div class="cv-list-item">
-  <strong>{{ pub.title }}</strong><br>
+  <strong>{% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</strong><br>
   <em>{{ pub.venue }}</em> · {{ pub.role_zh }} · {{ pub.year }}
   {% if pub.highlight_zh %}<div class="cv-detail">{{ pub.highlight_zh }}</div>{% endif %}
-  {% if pub.url or pub.code %}<div class="inline-links">{% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">DOI</a>{% endif %}{% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>{% endif %}</div>{% endif %}
+  {% if pub.url or pub.code %}<div class="inline-links">{% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">DOI / Publisher</a>{% endif %}{% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>{% endif %}</div>{% endif %}
 </div>
 {% endfor %}
 </div>
