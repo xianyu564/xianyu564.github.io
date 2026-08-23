@@ -61,6 +61,7 @@ permalink: /about/
 - [发表与学术活动]({{ site.baseurl }}/publications/)：已发表论文、未刊稿件、同行评审、专利与软件著作权。
 - [项目与开源]({{ site.baseurl }}/projects/)：代表性研究 / 技术工作与次级公开仓库。
 - 博士阶段代表研究：{{ pubs.published[0].title }}，*{{ pubs.published[0].venue }}*，{{ pubs.published[0].role_zh }}。
+- 简历下载：[中文 PDF]({{ p.contact.cv_zh | relative_url }}) · [English PDF]({{ p.contact.cv_en | relative_url }})。
 
 ## 其他经历
 
