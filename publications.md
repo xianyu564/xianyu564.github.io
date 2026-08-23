@@ -4,12 +4,9 @@ title: "发表与学术活动"
 permalink: /publications/
 ---
 
-{% assign p = site.data.profile %}
 {% assign pubs = site.data.publications %}
 
 # 发表与学术活动
-
-本页作为公开学术档案，优先记录**已经发表 / 已明确处于准备或评议流程中的工作**，不再维护容易漂移的“总论文数 / 在投数量”等汇总数字。
 
 ## 博士论文
 
@@ -22,10 +19,10 @@ permalink: /publications/
 <div class="publication-item">
 <strong>{{ paper.title }}</strong><br>
 <em>{{ paper.venue }}</em> · {{ paper.role_zh }} · {{ paper.year }}
-{% if paper.highlight_zh %}<br><span style="color:var(--text-secondary);">{{ paper.highlight_zh }}</span>{% endif %}
+{% if paper.highlight_zh %}<br><span class="cv-detail">{{ paper.highlight_zh }}</span>{% endif %}
 <div class="publication-links">
-{% if paper.url %}<a href="{{ paper.url }}" target="_blank">DOI / Publisher</a>{% endif %}
-{% if paper.code %}<a href="{{ paper.code }}" target="_blank">Code</a>{% endif %}
+{% if paper.url %}<a href="{{ paper.url }}" target="_blank" rel="noopener">DOI / Publisher</a>{% endif %}
+{% if paper.code %}<a href="{{ paper.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
 </div>
 </div>
 {% endfor %}
@@ -35,14 +32,13 @@ permalink: /publications/
 {% for item in pubs.manuscripts %}
 <div class="publication-item">
 <strong>{{ item.title }}</strong>{% if item.venue %}<br><em>{{ item.venue }}</em>{% endif %}<br>
-<span style="color:var(--text-secondary);">{{ item.status_zh }}</span>
+<span class="cv-detail">{{ item.status_zh }}</span>
 </div>
 {% endfor %}
 
 ## 学术活动
 
-{% for item in pubs.scholarly_activities %}
-- {{ item.zh }}
+{% for item in pubs.scholarly_activities %}- {{ item.zh }}
 {% endfor %}
 
 ## 发明专利
@@ -56,10 +52,5 @@ permalink: /publications/
 
 {{ pubs.software_copyrights.note_zh }}
 
-{% for item in pubs.software_copyrights.items %}
-- {{ item.zh }}（登记号：{{ item.reg }}）
+{% for item in pubs.software_copyrights.items %}- {{ item.zh }}（登记号：{{ item.reg }}）
 {% endfor %}
-
----
-
-公开学术身份与联系方式以[关于我]({{ site.baseurl }}/about/)页面为准。
