@@ -27,7 +27,6 @@ experience:
     organization_en: "HSBC"
     description_zh: "参与大型银行科技环境中的 AI 软件开发与智能自动化，并与工程、架构及业务团队协作探索新兴技术的应用。"
     description_en: "Working on AI-enabled software development and intelligent automation within a large-scale banking technology environment, collaborating across engineering, architecture, and business teams on the application of emerging technologies."
-    disclosure_note: "Public description intentionally follows the same high-level disclosure boundary used on LinkedIn."
 
   - id: "jueming"
     current: false
@@ -71,6 +70,22 @@ education:
     start: "2016-08"
     end: "2020-06"
 
+internships:
+  phd_zh:
+    - "百图生科"
+    - "北京聚创造网络科技有限公司"
+    - "泰康保险集团股份有限公司"
+  phd_en:
+    - "BioMap"
+    - "Beijing JuCreate Network Technology Co., Ltd."
+    - "Taikang Insurance Group Inc."
+  bsc_zh:
+    - "中国科学技术大学化学物理系"
+    - "中国科学院理化技术研究所"
+  bsc_en:
+    - "Department of Chemical Physics, University of Science and Technology of China"
+    - "Technical Institute of Physics and Chemistry, Chinese Academy of Sciences"
+
 research_focus:
   zh:
     - "AI 系统与大模型应用"
@@ -111,5 +126,3 @@ now:
   question_zh: "为什么和 AI 说话有时像在念咒？"
   question_en: "Why can talking to AI sometimes feel like casting a spell?"
   url: "https://github.com/xianyu564?tab=overview&from=2026-08-01&to=2026-08-31"
-  note_zh: "该入口只指向公开 GitHub 活动概览；相关私人研究仓库名称与细节不在本主页自动披露。"
-  note_en: "This link points only to the public GitHub activity overview; the private research repository name and details are intentionally not disclosed here."
