@@ -65,8 +65,8 @@ scholarly_activities:
     en: "Acknowledged non-author contribution to Xiang Biao, ‘Experiencing, Education, and the Capacity to Form Experience’; manuscript in scholarly circulation and intended for Open Times."
 
   - type: "review"
-    zh: "同行评审：Journal of Chemical Theory and Computation；Frontiers in Chemistry；Frontiers in Pharmacology；Frontiers in Immunology。"
-    en: "Ad hoc peer reviewer: Journal of Chemical Theory and Computation; Frontiers in Chemistry; Frontiers in Pharmacology; Frontiers in Immunology."
+    zh: "同行评审：Journal of Chemical Theory and Computation、Frontiers in Chemistry、Frontiers in Pharmacology、Frontiers in Immunology（2021–2025 年峰值年度影响因子：6.6、5.5、6.0、8.8）。"
+    en: "Peer reviewer: Journal of Chemical Theory and Computation (JIF 6.6); Frontiers in Chemistry (JIF 5.5); Frontiers in Pharmacology (JIF 6.0); Frontiers in Immunology (JIF 8.8). Peak annual JIF, 2021–2025."
 
 patents:
   - year: 2020
@@ -79,7 +79,7 @@ patents:
 software_copyrights:
   registration_year: 2025
   rights_assigned_year: 2026
-  note_zh: "本人为原始开发者及登记权利人；5 项软件著作权于 2025 年完成登记，相关权利于 2026 年完成转让。"
+  note_zh: "本人为原始开发者；5 项软件著作权于 2025 年完成登记，相关权利于 2026 年完成转让。"
   note_en: "Original developer and copyright registrant; five software copyrights were registered in 2025 and the related rights were assigned in 2026."
   items:
     - zh: "周易 AI 风险决策 APP 设计软件"
