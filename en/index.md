@@ -8,6 +8,8 @@ permalink: /en/
 {% assign p = site.data.profile %}
 {% assign pubs = site.data.publications %}
 {% assign projects = site.data.projects %}
+{% assign phd = p.education | first %}
+{% assign lead_paper = pubs.published | first %}
 
 <div class="hero-section">
   <h1>{{ p.identity.name_en }} <span style="font-size:0.55em; font-weight:500;">{{ p.identity.credential }}</span></h1>
@@ -30,9 +32,9 @@ permalink: /en/
     {% endif %}
   {% endfor %}
   <div class="cv-item">
-    <strong>{{ p.education[0].degree_en }} · {{ p.education[0].field_en }}</strong><br>
-    {{ p.education[0].institution_en }} · {{ p.education[0].start }}–{{ p.education[0].end }}<br>
-    <span style="color:var(--text-secondary);">Thesis: {{ p.education[0].thesis }}</span>
+    <strong>{{ phd.degree_en }} · {{ phd.field_en }}</strong><br>
+    {{ phd.institution_en }} · {{ phd.start }}–{{ phd.end }}<br>
+    <span style="color:var(--text-secondary);">Thesis: {{ phd.thesis }}</span>
   </div>
 </div>
 
@@ -61,10 +63,10 @@ permalink: /en/
 
 <div class="publications-container">
   <div class="publication-item">
-    <strong>{{ pubs.published[0].title }}</strong><br>
-    <em>{{ pubs.published[0].venue }}</em> · {{ pubs.published[0].role_en }} · {{ pubs.published[0].year }}<br>
-    <span style="color:var(--text-secondary);">{{ pubs.published[0].highlight_en }}</span><br>
-    <div class="publication-links"><a href="{{ pubs.published[0].url }}" target="_blank">DOI</a></div>
+    <strong>{{ lead_paper.title }}</strong><br>
+    <em>{{ lead_paper.venue }}</em> · {{ lead_paper.role_en }} · {{ lead_paper.year }}<br>
+    <span style="color:var(--text-secondary);">{{ lead_paper.highlight_en }}</span><br>
+    <div class="publication-links"><a href="{{ lead_paper.url }}" target="_blank">DOI</a></div>
   </div>
 
   {% for project in projects.selected limit:3 %}
