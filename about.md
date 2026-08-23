@@ -4,164 +4,91 @@ title: "关于我"
 permalink: /about/
 ---
 
-# 关于我 - Zhang Ziyang (张子阳)
+{% assign p = site.data.profile %}
+{% assign pubs = site.data.publications %}
+
+# 关于我
 
 <div class="about-intro">
-AI导航的计算生物医药与决策智能研究者 | 新加坡国立大学博士 | 长沙决明科技创始人&CTO
+{{ p.identity.name_zh }} · {{ p.identity.credential }}<br>
+{{ p.identity.tagline_zh }}
 </div>
 
-## 个人简介
+## 简介
 
-我是张子阳，专注于AI导航的计算生物医药与决策智能领域的研究者。研究方向主要包括：
-- 计算生物医学与AI辅助生物材料发现
-- 3D生物打印技术与糖尿病伤口护理
-- 基于机器学习的分子动力学和量子化学计算
-- 膜分离技术与纳米材料设计
+我的工作主要横跨 **AI 系统、AI for Science 与计算化学**。目前在汇丰从事科技相关工作，公开介绍仅保留与 LinkedIn 一致的高层口径：参与大型银行科技环境中的 AI 软件开发与智能自动化，并与工程、架构及业务团队协作探索新兴技术的应用。
 
-## 教育背景
+我的科研背景集中于 AI 辅助药物发现、计算化学和生物材料。博士期间在新加坡国立大学生物医学工程系学习，并接受药剂与药理科学、淡马锡生命科学实验室及新加坡国家癌症中心的正式联合培养。相关研究把科学文献挖掘、大语言模型与分子对接、分子动力学、量子化学和实验验证连接起来，用于糖尿病伤口相关药物研究。
 
-**哲学博士 (Ph.D.)** | 新加坡国立大学 (2020年8月 - 2024年12月)
-- 院系：生物医学工程系、药剂与药理科学系
-- 导师：Assoc. Prof. Raye Yeow Chen-Hua 姚臣华, Prof. Pastorin Giorgia
-- 论文：3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care
-- 研究领域：计算生物医学、AI辅助材料设计、3D生物打印
-
-**理学学士 (B.Sc.)** | 华中科技大学 (2016年8月 - 2020年6月)
-- 院系：化学系
-- 导师：Prof. Zhao Qiang 赵强, Prof. Liao Rong-zhen 廖荣臻, Prof. Gong Yuefa 龚跃法, Prof. Zhu Lihua 朱丽华, Prof. Chen Yu 陈宇
-- 专业方向：计算化学、量子化学、分子动力学 
+此前创办决明科技，并以 **Elephenotype / 象对论** 作为对外品牌之一，负责 AI / LLM 软件开发与交付。
 
 ## 工作经历
 
-**创始人、首席技术官** | 长沙决明科技有限公司 (2025年3月 - 至今)
-- 负责象对论APP及网站的技术开发与运营
-- 完成互联网合规项目、增值电信经营许可证等资质申请
-- 开发AI风险决策系统和各类传统文化数字化工具
-- 领导技术团队开展软件著作权申请工作（5项已获批/审批中）
+{% for exp in p.experience %}
+**{{ exp.role_zh }}** | {{ exp.organization_zh }}{% if exp.brand_zh %} / {{ exp.brand_zh }}{% endif %} · {{ exp.start }}–{% if exp.current %}至今{% else %}{{ exp.end }}{% endif %}
 
-**同行评审专家** | Journal of Chemical Theory and Computation (ACS) (2021年7月 - 至今)
-- 期刊影响因子：5.5 (Top期刊)
-- 负责计算化学与理论化学领域学术论文的同行评议工作
-- 参与学术质量把控与研究方向评估
+{{ exp.description_zh }}
 
-**联培博士** | Pathnova Laboratories, 淡马锡生命科学实验室 (2020年8月 - 2022年11月)
-- 机构：新加坡国家癌症中心，杜克大学-新加坡国立大学医学院
-- 导师：Dr. Ian Cheong Shing-Yi 张显义, Assoc. Prof. Melvin Chua Lee Kiang 蔡立强
-- 研究课题：细胞衰老相关蛋白质-多肽相互作用的计算模拟研究
+{% endfor %}
 
-## 研究兴趣
+## 教育背景
 
-### 核心研究方向
+{% for edu in p.education %}
+**{{ edu.degree_zh }}，{{ edu.field_zh }}** | {{ edu.institution_zh }} · {{ edu.start }}–{{ edu.end }}
 
-**AI导航的计算生物医药**
-- 结合大语言模型(GPT)与知识图谱进行生物医学知识发现
-- 多中心数据库集成(PubMed, Web of Science, DrugBank, ChEMBL等)
-- 命名实体识别与关系抽取技术在生物医学领域的应用
+{% if edu.joint_training %}
+联合培养：
+{% for jt in edu.joint_training %}
+- {{ jt.zh }}（{{ jt.period }}）
+{% endfor %}
+{% endif %}
+{% if edu.thesis %}- 博士论文：*{{ edu.thesis }}*{% endif %}
 
-**3D生物打印与生物材料**
-- 糖尿病伤口护理的生物材料发现与优化
-- 光固化水凝胶的设计、合成与性能评估
-- AI辅助生物材料筛选与临床转化研究
+{% endfor %}
 
-**计算化学与分子模拟**
-- 蛋白质-小分子相互作用的量子化学计算(Gaussian, ORCA)
-- 分子动力学仿真(GROMACS)与结构-功能关系研究
-- 高性能计算(HPC)平台工作流开发与优化
+## 研究方向
 
-**膜分离技术与纳米材料**
-- 纳滤膜、二维膜材料的结构-性能关系研究
-- 深度学习在膜材料空间表征中的应用
-- 膜分离过程的多尺度模拟与性能预测
+{% for item in p.research_focus.zh %}- {{ item }}
+{% endfor %}
 
 ## 核心技能
 
-**计算与建模**
-- 量子化学：Gaussian 16, ORCA, Multiwfn
-- 分子动力学：GROMACS, NAMD, VMD, PyMOL
-- 机器学习：TensorFlow, PyTorch, Scikit-learn
-- 结构预测：AlphaFold, RoseTTAFold
+{% for item in p.skills.zh %}- {{ item }}
+{% endfor %}
 
-**编程与开发**
-- 编程语言：Python, R, Bash/Shell, JavaScript
-- 高性能计算：Slurm, PBS, 并行计算优化
-- 数据分析：NumPy, Pandas, Matplotlib, Seaborn
-- 版本控制：Git, GitHub
+## 学术与技术档案
 
-**实验技能**
-- 3D生物打印技术
-- 水凝胶制备与表征
-- 拉曼光谱分析
-- 膜材料制备与性能测试
+- [发表与学术活动]({{ site.baseurl }}/publications/)：已发表论文、未刊稿件、同行评审、专利与软件著作权。
+- [项目与开源]({{ site.baseurl }}/projects/)：代表性研究 / 技术工作与次级公开仓库。
+- 博士阶段代表研究：{{ pubs.published[0].title }}，*{{ pubs.published[0].venue }}*，{{ pubs.published[0].role_zh }}。
 
-## 学术成果统计
+## 其他经历
 
-<div class="achievement-stats">
-  <div class="stat-row">
-    <div class="stat-box">
-      <span class="stat-title">发表论文</span>
-      <span class="stat-value">12篇</span>
-      <span class="stat-detail">含4篇第一作者、5篇在投稿件</span>
-    </div>
-    <div class="stat-box">
-      <span class="stat-title">发明专利</span>
-      <span class="stat-value">3项</span>
-      <span class="stat-detail">1项已授权、2项审查中</span>
-    </div>
-  </div>
-  <div class="stat-row">
-    <div class="stat-box">
-      <span class="stat-title">软件著作权</span>
-      <span class="stat-value">5项</span>
-      <span class="stat-detail">AI决策系统相关软件</span>
-    </div>
-    <div class="stat-box">
-      <span class="stat-title">期刊审稿</span>
-      <span class="stat-value">Top期刊</span>
-      <span class="stat-detail">JCTC (IF=5.5) 审稿专家</span>
-    </div>
-  </div>
-</div>
+**实习 / 研究实践**
 
-## 荣誉奖项
+- 博士期间：百图生科、泰康保险集团、北京聚创造网络科技有限公司。
+- 本科期间：中国科学技术大学化学物理系、中国科学院理化技术研究所。
 
-- **博士学位**: 新加坡国立大学生物医学工程与药剂科学 (2024年)
-- **发明专利授权**: 谱图基础维度校正及差示分析方法 (CN109596558B, 2020年)
-- **学术服务**: Journal of Chemical Theory and Computation同行评审专家 (2021年至今)
-- **软件著作权**: 5项AI风险决策系统相关软件著作权 (2025年)
+**科研合作**  
+{{ p.additional.collaborations_zh }}
 
-## 学术服务与合作
+**艺术创作**  
+{{ p.additional.arts_zh }}
 
-**期刊审稿**
-- Journal of Chemical Theory and Computation (ACS, IF=5.5)
+**语言**  
+{{ p.additional.languages_zh }}
 
-**研究合作机构**
-- 新加坡国立大学 (生物医学工程系、药学系)
-- 新加坡国家癌症中心
-- 杜克大学-新加坡国立大学医学院
-- 华中科技大学 (化学与化工学院)
-- 中南大学湘雅医学院
+## {{ p.now.label_zh }}
 
-**技术专长领域**
-- 高性能计算(HPC)集群管理与作业优化
-- 量子化学计算与波函数分析
-- 分子动力学仿真与轨迹分析
-- 机器学习建模与深度学习应用
-- 知识图谱构建与自然语言处理
+[**{{ p.now.question_zh }}**]({{ p.now.url }})  
+{{ p.now.note_zh }}
 
 ## 联系方式
 
-- **邮箱**: z_zz@u.nus.edu
-- **手机**: +86-19894359122, +65-89428966
-- **地址**: 湖南长沙
+- 邮箱：[{{ p.contact.email }}](mailto:{{ p.contact.email }})
+- [LinkedIn]({{ p.contact.linkedin }})
+- [ORCID]({{ p.contact.orcid }})
+- [GitHub]({{ p.contact.github }})
+- [Web of Science]({{ p.contact.web_of_science }})
 
-## 学术资料
-
-- [ORCID](https://orcid.org/0000-0002-0350-5958)
-- [LinkedIn]( https://www.linkedin.com/in/ziyang-zhang-83815b206/)
-- [GitHub](https://github.com/xianyu564)
-- [Web of Science](https://webofscience.com/wos/author/record/JDC-4596-2023)
-
-## 简历下载
-
-- [English CV (PDF)](Zhang_Ziyang_CV_Sept2025.pdf)
-- [中文简历 (PDF)](张子阳个人简历，2025年9月.pdf)
+> 本页不公开手机号、详细住址或企业内部实现信息。

@@ -1,7 +1,7 @@
 # Site settings
-title: "张子阳的学术主页"
-description: "AI导航的计算生物医药与决策智能 - Zhang Ziyang's Academic Homepage"
-author: "Zhang Ziyang"
+title: "张子阳 | Ziyang Zhang"
+description: "AI Systems | AI for Science and Engineering | Computational Chemistry"
+author: "Ziyang Zhang"
 email: "z_zz@u.nus.edu"
 
 # Site URL
@@ -17,21 +17,20 @@ plugins:
   - jekyll-sitemap
   - jekyll-remote-theme
 
-# Language settings for Chinese support
 lang: zh-CN
+languages: ["zh", "en"]
+default_lang: zh
 
-# Navigation
 navigation:
   - title: "主页"
     url: /
   - title: "关于"
     url: /about/
-  - title: "发表论文"
+  - title: "发表与学术"
     url: /publications/
-  - title: "项目"
+  - title: "项目与开源"
     url: /projects/
 
-# English Navigation
 navigation_en:
   - title: "Home"
     url: /en/
@@ -42,24 +41,15 @@ navigation_en:
   - title: "Projects"
     url: /en/projects/
 
-# Language settings
-languages: ["zh", "en"]
-default_lang: zh
-
-# Social media links
 social:
   github: "xianyu564"
-  google_scholar: "your-scholar-id"
-  twitter: "your-twitter-handle"
 
-# Markdown settings
 markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# Exclude files from processing
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -70,6 +60,5 @@ exclude:
   - vendor/ruby/
   - README.md
 
-# Build settings
 safe: false
 incremental: false

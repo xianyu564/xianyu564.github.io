@@ -1,160 +1,99 @@
 ---
 layout: default
-title: "学术主页"
+title: "主页"
 ---
 
+{% assign p = site.data.profile %}
+{% assign pubs = site.data.publications %}
+{% assign projects = site.data.projects %}
+
 <div class="hero-section">
-  <h1>欢迎访问张子阳的学术主页</h1>
-  <p style="font-size: 1.1rem; color: var(--text-secondary); margin: 0; position: relative; z-index: 1;">AI导航的计算生物医药与决策智能研究者 | 长沙决明科技创始人 & CTO</p>
+  <h1>{{ p.identity.name_zh }} <span style="font-size:0.55em; font-weight:500;">{{ p.identity.credential }}</span></h1>
+  <p style="font-size:1.08rem; color:var(--text-secondary); margin:0.35rem 0;">{{ p.identity.tagline_zh }}</p>
+  <p style="font-size:0.92rem; color:var(--text-tertiary); margin:0;">{{ p.identity.location_zh }}</p>
 </div>
 
 <hr class="section-divider">
 
-## 研究主题
+## 当前
+
+<div class="cv-summary">
+  {% for exp in p.experience %}
+    {% if exp.current %}
+    <div class="cv-item">
+      <strong>{{ exp.role_zh }}</strong><br>
+      {{ exp.organization_zh }} · {{ exp.start }}–至今<br>
+      <span style="color:var(--text-secondary);">{{ exp.description_zh }}</span>
+    </div>
+    {% endif %}
+  {% endfor %}
+  <div class="cv-item">
+    <strong>{{ p.education[0].degree_zh }} · {{ p.education[0].field_zh }}</strong><br>
+    {{ p.education[0].institution_zh }} · {{ p.education[0].start }}–{{ p.education[0].end }}<br>
+    <span style="color:var(--text-secondary);">博士论文：{{ p.education[0].thesis }}</span>
+  </div>
+</div>
+
+<hr class="section-divider">
+
+## 研究与技术主线
 
 <div class="research-topics">
   <div class="topic-card">
-    <div class="topic-icon">🤖</div>
-    <h3>AI导航的计算生物医药</h3>
-    <p>结合人工智能与计算化学方法，专注于生物医学材料发现和药物设计。</p>
+    <h3>AI 系统</h3>
+    <p>面向真实工作流的 AI / LLM 应用、软件开发与智能自动化；公开主页对当前企业项目只保留经允许的高层描述。</p>
   </div>
-  
   <div class="topic-card">
-    <div class="topic-icon">🖨️</div>
-    <h3>3D生物打印技术</h3>
-    <p>糖尿病伤口护理的生物材料发现、光固化水凝胶开发和临床转化研究。</p>
+    <h3>AI for Science</h3>
+    <p>把文献、模型、模拟与实验连接成可执行研究流程，关注药物发现、生物材料与科学知识工作流。</p>
   </div>
-  
   <div class="topic-card">
-    <div class="topic-icon">⚗️</div>
-    <h3>计算化学与分子动力学</h3>
-    <p>蛋白质-小分子相互作用的量子化学计算、分子动力学仿真和高性能计算应用。</p>
+    <h3>计算化学</h3>
+    <p>分子对接、分子动力学、量子化学与高性能计算，用于蛋白质–小分子及多尺度生物分子互作分析。</p>
   </div>
 </div>
 
 <hr class="section-divider">
 
-## 学术概况
-
-<div class="cv-summary">
-  <div class="cv-item">
-    <strong>现任职位</strong><br>
-    长沙决明科技有限公司 创始人&首席技术官
-  </div>
-  <div class="cv-item">
-    <strong>最高学历</strong><br>
-    新加坡国立大学 生物医学工程 哲学博士 (2024)
-  </div>
-  <div class="cv-item">
-    <strong>研究方向</strong><br>
-    AI导航的计算生物医药、3D生物打印、决策智能
-  </div>
-  <div class="cv-item">
-    <strong>学术服务</strong><br>
-    Journal of Chemical Theory and Computation (JCTC) 同行评审专家
-  </div>
-</div>
-
-<hr class="section-divider">
-
-## 代表性论文
+## 代表性工作
 
 <div class="publications-container">
-  <div class="publication-year">
-    <h3>2025年</h3>
-  </div>
-  
   <div class="publication-item">
-    <strong>Qualitative Artificial Intelligence and Quantitative Computational Chemistry for Personalized Diabetic Wound Healing</strong><br>
-    Zhang Ziyang (第一作者)<br>
-    <em>Interdisciplinary Medicine</em>, 2025 (已提交)<br>
-    <div class="publication-links">
-      <a href="#">PDF</a>
-      <a href="#">Code</a>
-    </div>
+    <strong>{{ pubs.published[0].title }}</strong><br>
+    <em>{{ pubs.published[0].venue }}</em> · {{ pubs.published[0].role_zh }} · {{ pubs.published[0].year }}<br>
+    <span style="color:var(--text-secondary);">{{ pubs.published[0].highlight_zh }}</span><br>
+    <div class="publication-links"><a href="{{ pubs.published[0].url }}" target="_blank">DOI</a></div>
   </div>
 
+  {% for project in projects.selected limit:3 %}
   <div class="publication-item">
-    <strong>Scalable 2D Membranes for Near-perfect Separation of Hydrogenation/Dehydrogenation</strong><br>
-    Zhang Ziyang (第二作者)<br>
-    <em>Nature Materials</em>, 2025 (已提交)<br>
+    <strong>{{ project.title_zh }}</strong> <span style="color:var(--text-tertiary);">{{ project.period }}</span><br>
+    <span style="color:var(--text-secondary);">{{ project.description_zh }}</span>
+    {% if project.links %}
     <div class="publication-links">
-      <a href="#">PDF</a>
-      <a href="#">Code</a>
+      {% for link in project.links %}<a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% endfor %}
     </div>
+    {% endif %}
   </div>
-
-  <div class="publication-item">
-    <strong>IKBKE is a β-Catenin Kinase that Regulates Mesenchymal Stem Cell Differentiation</strong><br>
-    Zhang Ziyang (第二作者)<br>
-    <em>Nature Communications</em>, 2025 (已提交)<br>
-    <div class="publication-links">
-      <a href="#">PDF</a>
-      <a href="#">Code</a>
-    </div>
-  </div>
-
-  <div class="publication-year">
-    <h3>2024年</h3>
-  </div>
-
-  <div class="publication-item">
-    <strong>3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care</strong><br>
-    Zhang Ziyang<br>
-    <em>NUS PhD Dissertation</em>, 2024<br>
-    <div class="publication-links">
-      <a href="#">PDF</a>
-      <a href="#">摘要</a>
-    </div>
-  </div>
-
-  <div class="publication-item">
-    <strong>Enhancing X-ray Radiotherapy Sensitization with Multifunctional Nanoparticles</strong><br>
-    Zhang Ziyang (共通讯作者)<br>
-    <em>Small</em>, 2024<br>
-    <div class="publication-links">
-      <a href="#">PDF</a>
-      <a href="#">DOI</a>
-    </div>
-  </div>
-
-  <div class="publication-year">
-    <h3>2021年</h3>
-  </div>
-
-  <div class="publication-item">
-    <strong>Deep spatial representation learning of polyamide nanofiltration membranes</strong><br>
-    Zhang Ziyang (第一作者)<br>
-    <em>Journal of Membrane Science</em>, 2021<br>
-    <div class="publication-links">
-      <a href="#">PDF</a>
-      <a href="#">Code</a>
-    </div>
-  </div>
+  {% endfor %}
 </div>
 
 <hr class="section-divider">
 
-## 最新动态
+## {{ p.now.label_zh }}
 
-<div class="updates-list">
-  <div class="update-item">
-    <span class="update-date">🎓 2024年12月</span>
-    <span class="update-content">完成新加坡国立大学博士学位答辩</span>
-  </div>
-  <div class="update-item">
-    <span class="update-date">🚀 2025年3月</span>
-    <span class="update-content">创立长沙决明科技有限公司，担任创始人和首席技术官</span>
-  </div>
-  <div class="update-item">
-    <span class="update-date">📝 2025年9月</span>
-    <span class="update-content">多篇论文向顶级期刊投稿 (Interdisciplinary Medicine, Nature Materials, Nature Communications)</span>
-  </div>
+<div class="update-item">
+  <span class="update-content"><strong><a href="{{ p.now.url }}" target="_blank">{{ p.now.question_zh }}</a></strong></span><br>
+  <span style="color:var(--text-secondary); font-size:0.9rem;">{{ p.now.note_zh }}</span>
 </div>
 
----
+<hr class="section-divider">
 
-更多信息请查看 [关于我]({{ site.baseurl }}/about/) 和 [完整论文列表]({{ site.baseurl }}/publications/)。
+## 导航
+
+- [关于我]({{ site.baseurl }}/about/)：完整的职业、教育、研究与技术档案
+- [发表与学术活动]({{ site.baseurl }}/publications/)：论文、未刊稿件、学术服务、专利与软件著作权
+- [项目与开源]({{ site.baseurl }}/projects/)：代表性研究 / 技术项目与次级公开仓库
 
 <div class="language-notice">
 📍 <em>This website is also available in <a href="{{ site.baseurl }}/en/">English</a></em>
