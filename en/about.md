@@ -62,6 +62,7 @@ Joint training:
 - [Publications & Scholarly Activities]({{ site.baseurl }}/en/publications/): published work, manuscripts, peer review, patents, and software copyrights.
 - [Projects & Open Source]({{ site.baseurl }}/en/projects/): selected research/technical work and secondary public repositories.
 - Representative Ph.D. work: {{ pubs.published[0].title }}, *{{ pubs.published[0].venue }}*, {{ pubs.published[0].role_en | downcase }}.
+- CV: [English PDF]({{ p.contact.cv_en | relative_url }}) · [中文 PDF]({{ p.contact.cv_zh | relative_url }}).
 
 ## Additional Experience
 
