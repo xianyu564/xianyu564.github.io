@@ -1,0 +1,82 @@
+selected:
+  - id: "drug-repurposing"
+    period: "2022–2024"
+    title_zh: "AI 辅助老药新用与药靶计算化学验证"
+    title_en: "AI-Assisted Drug Repurposing & Computational Chemistry Validation"
+    role_zh: "博士核心课题"
+    role_en: "Ph.D. core project"
+    description_zh: "从约 9k 蛋白质 × 3k 药物的关联空间出发，通过算法筛选、LLM 文献关系抽取与计算化学验证收敛至 50 × 35 候选空间，并完整评估 1,750 组蛋白质–小分子组合；最终优选叶酸并在人源细胞模型中完成验证。"
+    description_en: "Built a ~9k-protein × ~3k-drug search space, combined algorithmic screening, LLM literature extraction, and computational chemistry to reduce it to 50 × 35 candidates, evaluated all 1,750 protein–ligand pairs, and validated folic acid in human cell models."
+    links:
+      - label: "Paper"
+        url: "https://doi.org/10.1021/acsnanomed.5c00180"
+
+  - id: "ai-solutions"
+    period: "2025–2026"
+    title_zh: "AI 解决方案开发及交付"
+    title_en: "AI Solutions Development & Delivery"
+    role_zh: "算法负责人"
+    role_en: "Algorithm lead"
+    description_zh: "围绕计算机视觉质量评估、微信公众号语料索引、RAG 应用、红队测试与防护，以及大模型微调开展开发和交付。"
+    description_en: "Developed and delivered AI/LLM applications spanning computer-vision QA, WeChat corpus indexing, RAG, red-teaming and guardrails, and model fine-tuning."
+    links:
+      - label: "Public training-data project"
+        url: "https://github.com/xianyu564/local-training-dataset-generator"
+
+  - id: "molecule-generation"
+    period: "2024–2026"
+    title_zh: "AI 分子生成与化学信息学评估"
+    title_en: "AI Molecule Generation & Cheminformatics Evaluation"
+    role_zh: "模拟负责人"
+    role_en: "Simulation lead"
+    description_zh: "使用 Boltz-2、AlphaFold 与分子模拟方法开展多尺度生物分子复合物预测与互作评估，并将计算结果用于候选位点优先级和湿实验设计。"
+    description_en: "Applied Boltz-2, AlphaFold, and molecular simulation to multi-scale biomolecular complex prediction and interaction assessment, using computational results to prioritize candidate sites and inform wet-lab design."
+
+  - id: "nanofiltration"
+    period: "2019–2021"
+    title_zh: "AI 化学合成预测与计算化学数据增强"
+    title_en: "AI Chemical Synthesis Prediction & Computational Augmentation"
+    role_zh: "本科核心课题"
+    role_en: "B.Sc. core project"
+    description_zh: "围绕聚酰胺纳滤膜建立化学知识增强与深度学习工作流，将约 10² 条实验记录扩展至约 10⁶ 条训练样本并用于合成–性能预测。"
+    description_en: "Built a chemistry-informed augmentation and deep-learning workflow for polyamide nanofiltration membranes, expanding ~10² experimental records to ~10⁶ training samples for synthesis–performance prediction."
+    links:
+      - label: "GitHub"
+        url: "https://github.com/xianyu564/Nanofiltration-Membrane-Deep-Learning"
+
+public_repositories:
+  - name: "local-training-dataset-generator"
+    url: "https://github.com/xianyu564/local-training-dataset-generator"
+    description_zh: "面向本地代码仓的自动化训练数据生成与处理框架，用于代码场景问答、架构设计任务与模型微调。"
+    description_en: "Automated training-data generation and processing for local code repositories, supporting code-grounded QA, architecture-design tasks, and model fine-tuning."
+
+  - name: "Nanofiltration-Membrane-Deep-Learning"
+    url: "https://github.com/xianyu564/Nanofiltration-Membrane-Deep-Learning"
+    description_zh: "《Deep spatial representation learning of polyamide nanofiltration membranes》的公开实现。"
+    description_en: "Public implementation of ‘Deep spatial representation learning of polyamide nanofiltration membranes’."
+
+  - name: "scrape-my-wechat-official-account"
+    url: "https://github.com/xianyu564/scrape-my-wechat-official-account"
+    description_zh: "微信公众号文章抓取、归档与本地化工具，用于个人知识管理与语料整理。"
+    description_en: "A WeChat Official Account scraping, archiving, and localization tool for personal knowledge management and corpus organization."
+
+  - name: "tungshing"
+    url: "https://github.com/xianyu564/tungshing"
+    description_zh: "遵循 GB/T 33661-2017 的 Python 中国农历 / 黄历库，并提供兼容接口。"
+    description_en: "A Python Chinese calendar/almanac library aligned with GB/T 33661-2017 and providing compatibility interfaces."
+
+  - name: "divination-vs-science"
+    url: "https://github.com/xianyu564/divination-vs-science"
+    description_zh: "关于占卜、科学与风险决策关系的开放知识与哲学讨论项目。"
+    description_en: "An open knowledge and philosophical inquiry project on divination, science, and risk decision-making."
+
+  - name: "tobacco-notes"
+    url: "https://github.com/xianyu564/tobacco-notes"
+    description_zh: "开放的烟草品鉴笔记与模板库。"
+    description_en: "An open tobacco tasting-notes and template repository."
+
+archived:
+  - name: "wechat_official_backup"
+    url: "https://github.com/xianyu564/wechat_official_backup"
+    description_zh: "早期微信公众号备份工具，现已归档。"
+    description_en: "Earlier WeChat backup tool; now archived."

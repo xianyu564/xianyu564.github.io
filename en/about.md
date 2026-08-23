@@ -1,175 +1,96 @@
 ---
 layout: default
-title: "About Me"
+title: "About"
 lang: en
 permalink: /en/about/
 ---
 
-# About Me - Zhang Ziyang (张子阳)
+{% assign p = site.data.profile %}
+{% assign pubs = site.data.publications %}
+
+# About
 
 <div class="about-intro">
-Researcher in AI-Guided Computational Biomedicine and Decision Intelligence | Ph.D. from NUS | Founder & CTO of Changsha Jueming Technology
+{{ p.identity.name_en }} · {{ p.identity.credential }}<br>
+{{ p.identity.tagline_en }}
 </div>
 
-## Personal Introduction
+## Profile
 
-I am Zhang Ziyang, a researcher specializing in AI-guided computational biomedicine and decision intelligence. My research directions include:
-- Computational biomedicine and AI-assisted biomaterial discovery
-- 3D bioprinting technology for diabetic wound care
-- Machine learning-based molecular dynamics and quantum chemical calculations
-- Membrane separation technology and nanomaterial design
+I work across **AI systems, AI for Science, and computational chemistry**. I currently work in technology at HSBC. Public descriptions of this role intentionally stay at the same high-level boundary used on LinkedIn: AI-enabled software development and intelligent automation within a large-scale banking technology environment, with cross-functional collaboration across engineering, architecture, and business teams.
+
+My research background spans AI-assisted drug discovery, computational chemistry, and biomaterials. During my Ph.D. in Biomedical Engineering at the National University of Singapore, I received formal joint training with Pharmacy and Pharmaceutical Sciences, Temasek Life Sciences Laboratory, and National Cancer Centre Singapore. My research connected scientific literature mining and LLMs with docking, molecular dynamics, quantum chemistry, and experimental validation for diabetic-wound research.
+
+Previously, I founded Jue-Ming Technology, with **Elephenotype** as one of its public-facing brands, and led AI/LLM software development and delivery.
+
+## Professional Experience
+
+{% for exp in p.experience %}
+**{{ exp.role_en }}** | {{ exp.organization_en }}{% if exp.brand_en %} / {{ exp.brand_en }}{% endif %} · {{ exp.start }}–{% if exp.current %}Present{% else %}{{ exp.end }}{% endif %}
+
+{{ exp.description_en }}
+
+{% endfor %}
 
 ## Education
 
-**Doctor of Philosophy (Ph.D.)** | National University of Singapore (August 2020 - December 2024)
-- Departments: Biomedical Engineering, Pharmacy and Pharmacology
-- Supervisors: Assoc. Prof. Raye Yeow Chen-Hua, Prof. Pastorin Giorgia
-- Dissertation: 3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care
-- Research Areas: Computational Biomedicine, AI-Assisted Material Design, 3D Bioprinting
+{% for edu in p.education %}
+**{{ edu.degree_en }}, {{ edu.field_en }}** | {{ edu.institution_en }} · {{ edu.start }}–{{ edu.end }}
 
-**Bachelor of Science (B.Sc.)** | Huazhong University of Science and Technology (August 2016 - June 2020)
-- Department: Chemistry
-- Supervisors: Prof. Zhao Qiang, Prof. Liao Rong-zhen, Prof. Gong Yuefa, Prof. Zhu Lihua, Prof. Chen Yu
-- Specialization: Computational Chemistry, Quantum Chemistry, Molecular Dynamics
+{% if edu.joint_training %}
+Joint training:
+{% for jt in edu.joint_training %}
+- {{ jt.en }} ({{ jt.period }})
+{% endfor %}
+{% endif %}
+{% if edu.thesis %}- Thesis: *{{ edu.thesis }}*{% endif %}
 
-## Work Experience
+{% endfor %}
 
-**Founder & Chief Technology Officer** | Changsha Jueming Technology Co., Ltd. (March 2025 - Present)
-- Lead technical development and operations of Xiangdui Lun APP and website
-- Completed internet compliance projects and applications for value-added telecommunications business permits
-- Developed AI risk decision systems and various traditional culture digitalization tools
-- Managed technical team for software copyright applications (5 approved/under review)
+## Research Focus
 
-**Peer Review Expert** | Journal of Chemical Theory and Computation (ACS) (July 2021 - Present)
-- Journal Impact Factor: 5.5 (Top Journal)
-- Conduct peer reviews for academic papers in computational and theoretical chemistry
-- Participate in academic quality control and research direction evaluation
-
-**Joint PhD Student** | Pathnova Laboratories, Temasek Life Sciences Laboratory (August 2020 - November 2022)
-- Institution: Singapore National Cancer Centre, Duke-NUS Medical School
-- Supervisors: Dr. Ian Cheong Shing-Yi, Assoc. Prof. Melvin Chua Lee Kiang
-- Research: Computational simulation of protein-peptide interactions related to cellular senescence
-
-## Research Interests
-
-### Core Research Areas
-
-**AI-Guided Computational Biomedicine**
-- Integration of large language models (GPT) with knowledge graphs for biomedical knowledge discovery
-- Multi-center database integration (PubMed, Web of Science, DrugBank, ChEMBL, etc.)
-- Named entity recognition and relation extraction in biomedical domains
-
-**3D Bioprinting & Biomaterials**
-- Biomaterial discovery and optimization for diabetic wound care
-- Design, synthesis, and performance evaluation of photocurable hydrogels
-- AI-assisted biomaterial screening and clinical translation research
-
-**Computational Chemistry & Molecular Simulation**
-- Quantum chemical calculations of protein-small molecule interactions (Gaussian, ORCA)
-- Molecular dynamics simulations (GROMACS) and structure-function relationship studies
-- High-performance computing (HPC) workflow development and optimization
-
-**Membrane Separation Technology & Nanomaterials**
-- Structure-property relationship studies of nanofiltration and 2D membrane materials
-- Deep learning applications in membrane material spatial characterization
-- Multi-scale simulation and performance prediction of membrane separation processes
+{% for item in p.research_focus.en %}- {{ item }}
+{% endfor %}
 
 ## Core Skills
 
-**Computation & Modeling**
-- Quantum Chemistry: Gaussian 16, ORCA, Multiwfn
-- Molecular Dynamics: GROMACS, NAMD, VMD, PyMOL
-- Machine Learning: TensorFlow, PyTorch, Scikit-learn
-- Structure Prediction: AlphaFold, RoseTTAFold
+{% for item in p.skills.en %}- {{ item }}
+{% endfor %}
 
-**Programming & Development**
-- Programming Languages: Python, R, Bash/Shell, JavaScript
-- High-Performance Computing: Slurm, PBS, Parallel Computing Optimization
-- Data Analysis: NumPy, Pandas, Matplotlib, Seaborn
-- Version Control: Git, GitHub
+## Academic & Technical Archive
 
-**Experimental Skills**
-- 3D Bioprinting Technology
-- Hydrogel Preparation and Characterization
-- Raman Spectroscopy Analysis
-- Membrane Material Preparation and Performance Testing
+- [Publications & Scholarly Activities]({{ site.baseurl }}/en/publications/): published work, manuscripts, peer review, patents, and software copyrights.
+- [Projects & Open Source]({{ site.baseurl }}/en/projects/): selected research/technical work and secondary public repositories.
+- Representative Ph.D. work: {{ pubs.published[0].title }}, *{{ pubs.published[0].venue }}*, {{ pubs.published[0].role_en | downcase }}.
+- CV: [English PDF]({{ p.contact.cv_en | relative_url }}) · [中文 PDF]({{ p.contact.cv_zh | relative_url }}).
 
-## Contact Information
+## Additional Experience
 
-<div class="contact-info">
-<strong>Email:</strong> z_zz@u.nus.edu<br>
-<strong>Phone:</strong> +86-19894359122, +65-89428966<br>
-<strong>Address:</strong> Changsha, Hunan, China<br>
-<strong>Research Focus:</strong> AI-Guided Computational Biomedicine, 3D Bioprinting, Decision Intelligence
-</div>
+**Internships / research placements**
 
-## Academic Achievements
+- During Ph.D.: BioMap; Taikang Insurance Group; Beijing JuCreate Network Technology Co., Ltd.
+- During B.Sc.: Department of Chemical Physics, University of Science and Technology of China; Technical Institute of Physics and Chemistry, Chinese Academy of Sciences.
 
-<div class="achievement-stats">
-  <div class="stat-row">
-    <div class="stat-box">
-      <span class="stat-title">Publications</span>
-      <span class="stat-value">12</span>
-      <span class="stat-detail">4 first-author, 5 under review</span>
-    </div>
-    <div class="stat-box">
-      <span class="stat-title">Patents</span>
-      <span class="stat-value">3</span>
-      <span class="stat-detail">1 granted, 2 under examination</span>
-    </div>
-  </div>
-  <div class="stat-row">
-    <div class="stat-box">
-      <span class="stat-title">Software Copyrights</span>
-      <span class="stat-value">5</span>
-      <span class="stat-detail">AI decision system software</span>
-    </div>
-    <div class="stat-box">
-      <span class="stat-title">Journal Reviewer</span>
-      <span class="stat-value">Top Journal</span>
-      <span class="stat-detail">JCTC (IF=5.5) Reviewer</span>
-    </div>
-  </div>
-</div>
+**Research collaborations**  
+{{ p.additional.collaborations_en }}
 
-## Honors & Awards
+**Arts**  
+{{ p.additional.arts_en }}
 
-- **PhD Degree**: Biomedical Engineering & Pharmaceutical Sciences, National University of Singapore (2024)
-- **Patent Grant**: Spectral Baseline Correction Method (CN109596558B, 2020)
-- **Academic Service**: Peer reviewer for Journal of Chemical Theory and Computation (2021-Present)
-- **Software Copyrights**: 5 AI risk decision system related software copyrights (2025)
+**Languages**  
+{{ p.additional.languages_en }}
 
-## Academic Service & Collaborations
+## {{ p.now.label_en }}
 
-**Journal Review**
-- Journal of Chemical Theory and Computation (ACS, IF=5.5)
+[**{{ p.now.question_en }}**]({{ p.now.url }})  
+{{ p.now.note_en }}
 
-**Research Collaborating Institutions**
-- National University of Singapore (Dept. of Biomedical Engineering, Dept. of Pharmacy)
-- Singapore National Cancer Centre
-- Duke-NUS Medical School
-- Huazhong University of Science and Technology (School of Chemistry and Chemical Engineering)
-- Central South University Xiangya School of Medicine
+## Contact
 
-**Technical Expertise**
-- High-Performance Computing (HPC) cluster management and job optimization
-- Quantum chemical calculations and wavefunction analysis
-- Molecular dynamics simulations and trajectory analysis
-- Machine learning modeling and deep learning applications
-- Knowledge graph construction and natural language processing
+- Email: [{{ p.contact.email }}](mailto:{{ p.contact.email }})
+- [LinkedIn]({{ p.contact.linkedin }})
+- [ORCID]({{ p.contact.orcid }})
+- [GitHub]({{ p.contact.github }})
+- [Web of Science]({{ p.contact.web_of_science }})
 
-## Academic Resources
-
-- [ORCID](https://orcid.org/0000-0002-0350-5958)
-- [LinkedIn](https://www.linkedin.com/in/ziyang-zhang-83815b206/)
-- [GitHub](https://github.com/xianyu564)
-- [Web of Science](https://webofscience.com/wos/author/record/JDC-4596-2023)
-
-## CV Downloads
-
-- [English CV (PDF)](Zhang_Ziyang_CV_Sept2025.pdf)
-- [中文简历 (PDF)](张子阳个人简历，2025年9月.pdf)
-
----
-
-Feel free to reach out if you're interested in collaboration or have questions about my research!
+> Phone numbers, detailed residential information, and internal enterprise implementation details are intentionally not published on this site.

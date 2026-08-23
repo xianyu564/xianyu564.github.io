@@ -1,109 +1,54 @@
-# Zhang Ziyang (张子阳) - Academic Homepage
+# Ziyang Zhang · Personal Academic & Technical Archive
 
-[![Website](https://img.shields.io/badge/Website-xianyu564.github.io-blue?style=flat-square&logo=github)](https://xianyu564.github.io)
-[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--0350--5958-green?style=flat-square&logo=orcid)](https://orcid.org/0000-0002-0350-5958)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Zhang%20Ziyang-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/ziyang-zhang-83815b206/)
-[![GitHub](https://img.shields.io/badge/GitHub-xianyu564-black?style=flat-square&logo=github)](https://github.com/xianyu564)
+[![Website](https://img.shields.io/badge/Website-xianyu564.github.io-274C5E?style=flat-square&logo=github)](https://xianyu564.github.io)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--0350--5958-A6CE39?style=flat-square&logo=orcid)](https://orcid.org/0000-0002-0350-5958)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ziyang--zhang--ai-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/ziyang-zhang-ai/)
 
-## 👋 About Me
+This repository powers my bilingual personal website and serves as a **public academic and technical archive**, rather than a copy of my résumé.
 
-I am **Zhang Ziyang (张子阳)**, a researcher specializing in **AI-Guided Computational Biomedicine and Decision Intelligence**. I am passionate about combining artificial intelligence with computational chemistry to advance biomedical materials discovery and drug design.
+## Public profile
 
-### 🎓 Education
+- **Focus:** AI Systems · AI for Science · Computational Chemistry
+- **Current role:** Consultant Specialist at HSBC
+- **Education:** Ph.D. in Biomedical Engineering, National University of Singapore
+- **Email:** z_zz@u.nus.edu
 
-- **PhD in Biomedical Engineering & Pharmaceutical Sciences**  
-  National University of Singapore (2020 - 2024)  
-  Advisors: Assoc. Prof. Raye Yeow Chen-Hua, Prof. Pastorin Giorgia
+Current enterprise work is intentionally described only at the same high-level public disclosure boundary used on LinkedIn. Internal systems, implementation details, repositories, infrastructure, and workflow specifics are out of scope for this website.
 
-- **BSc in Chemistry**  
-  Huazhong University of Science and Technology (2016 - 2020)  
-  Advisors: Prof. Zhao Qiang, Prof. Liao Rong-zhen, Prof. Gong Yuefa, Prof. Zhu Lihua, Prof. Chen Yu
+## Information architecture
 
-### 💼 Current Position
+The site uses Jekyll and keeps public factual records in `_data/` so that Chinese and English pages do not maintain separate copies of the same facts.
 
-**Founder & Chief Technology Officer**  
-[Changsha Jue-Ming Technology Co., Ltd.](https://xianyu564.github.io) (2025 - Present)
-- Leading the development of Elephenotype (象对论) APP and website
-- Developing AI-powered risk decision systems
-- Digitalization of traditional Chinese culture tools
+```text
+_data/
+  profile.yml       # identity, experience, education, contact, disclosure boundary
+  publications.yml  # publications, manuscripts, academic service, IP
+  projects.yml      # selected research/technical work and public repositories
 
-### 🔬 Research Interests
+cv/
+  Ziyang_Zhang_CV_EN.pdf
+  Ziyang_Zhang_CV_ZH.pdf
 
-- **AI-Guided Computational Biomedicine**: Integrating artificial intelligence with computational chemistry for biomedical research
-- **3D Bioprinting Technology**: Biomaterial discovery for diabetic wound care and hydrogel development
-- **Computational Chemistry & Molecular Dynamics**: Quantum chemical calculations and molecular dynamics simulations
-- **Machine Learning in Biomedicine**: Knowledge graph construction, named entity recognition, and relation extraction
-- **Membrane Separation Technology**: Structure-property relationships in nanofiltration and 2D membrane materials
+index.md / en/index.md
+about.md / en/about.md
+publications.md / en/publications.md
+projects.md / en/projects.md
+```
 
-### 🏆 Achievements
+Principle: **one public fact, one canonical data owner**. Reader-facing pages summarize and render those records rather than redefining them. CV files use stable paths so future résumé refreshes can replace the assets without changing public links.
 
-- **PhD Degree** from National University of Singapore (2024)
-- **Multiple Invention Patents**: Including energy storage traction launch technology and spectrum correction technology
-- **5 Software Copyrights**: AI risk decision system related software (2025)
-- **Peer Reviewer**: Journal of Chemical Theory and Computation (ACS, IF=5.5)
+## Disclosure boundary
 
-### 📚 Selected Publications
+- Public employment descriptions stay at an approved, high-level scope.
+- Private repositories are not named or described automatically.
+- A current private research line may be represented only through a researcher-approved public anchor question and a generic GitHub activity link.
+- Phone numbers, residential details, and internal enterprise implementation information are intentionally omitted.
 
-#### 2025
-- **Qualitative Artificial Intelligence and Quantitative Computational Chemistry for Personalized Diabetic Wound Healing**  
-  Zhang Ziyang (First Author) | *Interdisciplinary Medicine*, 2025 (Submitted)
+## Site
 
-- **Scalable 2D Membranes for Near-perfect Separation of Hydrogenation/Dehydrogenation**  
-  Zhang Ziyang (Second Author) | *Nature Materials*, 2025 (Submitted)
+- 中文：<https://xianyu564.github.io/>
+- English: <https://xianyu564.github.io/en/>
 
-- **IKBKE is a β-Catenin Kinase that Regulates Mesenchymal Stem Cell Differentiation**  
-  Zhang Ziyang (Second Author) | *Nature Communications*, 2025 (Submitted)
+## Development
 
-#### 2024
-- **3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care**  
-  Zhang Ziyang | *NUS PhD Dissertation*, 2024
-
-- **Enhancing X-ray Radiotherapy Sensitization with Multifunctional Nanoparticles**  
-  Zhang Ziyang (Co-corresponding Author) | *Small*, 2024
-
-#### 2021
-- **Deep spatial representation learning of polyamide nanofiltration membranes**  
-  Zhang Ziyang (First Author) | *Journal of Membrane Science*, 2021
-
-### 🌐 Links
-
-- 🌍 **Website**: [xianyu564.github.io](https://xianyu564.github.io)
-- 📄 **ORCID**: [0000-0002-0350-5958](https://orcid.org/0000-0002-0350-5958)
-- 💼 **LinkedIn**: [ziyang-zhang](https://www.linkedin.com/in/ziyang-zhang-83815b206/)
-- 🔬 **Web of Science**: [JDC-4596-2023](https://webofscience.com/wos/author/record/JDC-4596-2023)
-- 📧 **Email**: z_zz@u.nus.edu
-- 📱 **Phone**: +86-19894359122, +65-89428966
-
-### 📍 Location
-
-Changsha, Hunan, China
-
----
-
-## 🚀 This Repository
-
-This repository hosts my academic homepage, built with Jekyll and GitHub Pages. The website features:
-
-- 🎨 Modern, aesthetic design with smooth animations
-- 🌏 Bilingual support (Chinese & English)
-- 📱 Fully responsive layout
-- 🔍 Comprehensive research showcase
-- 📊 Publication list with metadata
-
-### 💻 Tech Stack
-
-- **Static Site Generator**: Jekyll
-- **Theme**: Modified Jekyll Minimal Theme
-- **Styling**: Custom SCSS with modern design system
-- **Hosting**: GitHub Pages
-- **Languages**: HTML, Markdown, SCSS
-
----
-
-<div align="center">
-
-### 🌟 Thank you for visiting! 🌟
-
-*本网站同时提供中文版本 | This website is also available in English*
-
-</div>
+The site is built with Jekyll / GitHub Pages and a customized Minimal theme. Content changes should update the canonical `_data/` record first when possible, then adjust presentation pages only when the information architecture or reader experience changes.

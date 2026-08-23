@@ -1,0 +1,115 @@
+identity:
+  name_zh: "张子阳"
+  name_en: "Ziyang Zhang"
+  credential: "Ph.D."
+  tagline_zh: "人工智能系统｜AI 驱动的科学与工程"
+  tagline_en: "AI Systems | AI for Science and Engineering"
+  location_zh: "中国广州"
+  location_en: "Guangzhou, China"
+
+contact:
+  email: "z_zz@u.nus.edu"
+  linkedin: "https://www.linkedin.com/in/ziyang-zhang-ai/"
+  github: "https://github.com/xianyu564"
+  orcid: "https://orcid.org/0000-0002-0350-5958"
+  web_of_science: "https://webofscience.com/wos/author/record/JDC-4596-2023"
+  cv_en: "/cv/Ziyang_Zhang_CV_EN.pdf"
+  cv_zh: "/cv/Ziyang_Zhang_CV_ZH.pdf"
+
+experience:
+  - id: "hsbc"
+    current: true
+    start: "2026-07"
+    end: "Present"
+    role_zh: "顾问专家"
+    role_en: "Consultant Specialist"
+    organization_zh: "汇丰银行"
+    organization_en: "HSBC"
+    description_zh: "参与大型银行科技环境中的 AI 软件开发与智能自动化，并与工程、架构及业务团队协作探索新兴技术的应用。"
+    description_en: "Working on AI-enabled software development and intelligent automation within a large-scale banking technology environment, collaborating across engineering, architecture, and business teams on the application of emerging technologies."
+    disclosure_note: "Public description intentionally follows the same high-level disclosure boundary used on LinkedIn."
+
+  - id: "jueming"
+    current: false
+    start: "2025-04"
+    end: "2026-06"
+    role_zh: "创始人、AI 负责人"
+    role_en: "Founder & AI Lead"
+    organization_zh: "决明科技"
+    organization_en: "Jue-Ming Technology"
+    brand_zh: "象对论"
+    brand_en: "Elephenotype"
+    description_zh: "负责 AI / LLM 软件开发与交付，覆盖计算机视觉、语料索引、RAG、红队测试、大模型微调和应用原型。"
+    description_en: "Led AI/LLM software development and delivery spanning computer vision, corpus indexing, RAG, red-teaming, model fine-tuning, and application prototyping."
+
+education:
+  - id: "nus-phd"
+    degree_zh: "哲学博士"
+    degree_en: "Ph.D."
+    field_zh: "生物医学工程"
+    field_en: "Biomedical Engineering"
+    institution_zh: "新加坡国立大学"
+    institution_en: "National University of Singapore"
+    start: "2020-08"
+    end: "2024-12"
+    thesis: "3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care"
+    joint_training:
+      - zh: "新加坡国立大学药剂与药理科学系"
+        en: "Pharmacy and Pharmaceutical Sciences, National University of Singapore"
+        period: "2022–2024"
+      - zh: "淡马锡生命科学实验室、新加坡国家癌症中心"
+        en: "Temasek Life Sciences Laboratory and National Cancer Centre Singapore"
+        period: "2020–2022"
+
+  - id: "hust-bsc"
+    degree_zh: "理学学士"
+    degree_en: "B.Sc."
+    field_zh: "化学"
+    field_en: "Chemistry"
+    institution_zh: "华中科技大学"
+    institution_en: "Huazhong University of Science and Technology"
+    start: "2016-08"
+    end: "2020-06"
+
+research_focus:
+  zh:
+    - "AI 系统与大模型应用"
+    - "AI for Science"
+    - "计算化学与药物发现"
+    - "生物材料与 3D 生物打印"
+  en:
+    - "AI systems and LLM applications"
+    - "AI for Science"
+    - "Computational chemistry and drug discovery"
+    - "Biomaterials and 3D bioprinting"
+
+skills:
+  zh:
+    - "人工智能 / 机器学习"
+    - "大语言模型与 RAG"
+    - "计算化学 / 分子动力学 / 量子化学"
+    - "Python 与高性能计算"
+    - "计算机视觉与数据处理"
+  en:
+    - "Artificial Intelligence / Machine Learning"
+    - "Large Language Models and RAG"
+    - "Computational Chemistry / Molecular Dynamics / Quantum Chemistry"
+    - "Python and High-Performance Computing"
+    - "Computer Vision and Data Processing"
+
+additional:
+  languages_zh: "普通话（母语）；英语（熟练，可用于全英文科研、写作及工作沟通）。"
+  languages_en: "Mandarin Chinese (native); English (full professional proficiency)."
+  collaborations_zh: "新加坡国立大学计算机学院、增材制造中心、杨潞龄医学院、智能功能材料研究所；华中科技大学电气与电子工程学院；中南大学湘雅医学院；湖南大学国家超级计算中心。"
+  collaborations_en: "NUS Computing, Medicine and Additive Manufacturing; CSU Xiangya Medical School; HUST EEE; National Supercomputing Center Changsha."
+  arts_zh: "湖南省直书画家协会会员、湖南省楹联家协会会员、长沙市文艺评论家协会会员，以及芙蓉区美术家协会会员、芙蓉区书法家协会会员；创作《抽象》《牛顿》等系列作品；37 件艺术作品完成版权登记（代表性登记号：湘作登字-2025-F-00098719）。"
+  arts_en: "Member of Hunan Provincial Direct-Affiliated Calligrapher & Artists Association, Hunan Provincial Couplet Association, Changsha Literary Critics Association, and related local art associations; creator of the Abstract, Newton, and related series; 37 artworks registered for copyright (e.g., Hunan-2025-F-00098719)."
+
+now:
+  label_zh: "近期研究问题"
+  label_en: "Now actively working on"
+  question_zh: "为什么和 AI 说话有时像在念咒？"
+  question_en: "Why can talking to AI sometimes feel like casting a spell?"
+  url: "https://github.com/xianyu564?tab=overview&from=2026-08-01&to=2026-08-31"
+  note_zh: "该入口只指向公开 GitHub 活动概览；相关私人研究仓库名称与细节不在本主页自动披露。"
+  note_en: "This link points only to the public GitHub activity overview; the private research repository name and details are intentionally not disclosed here."
