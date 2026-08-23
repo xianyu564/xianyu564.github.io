@@ -13,18 +13,21 @@ published:
     venue: "Small"
     role_zh: "共同通讯作者"
     role_en: "Co-corresponding author"
+    url: "https://doi.org/10.1002/smll.202400954"
 
   - year: 2024
     title: "Clearance of senescent cells alleviates metabolic dysfunction-associated steatohepatitis"
     venue: "EASL Congress 2024 Abstract Book / Journal of Hepatology"
     role_zh: "第四作者"
     role_en: "Fourth author"
+    url: "https://doi.org/10.1016/S0168-8278(24)01673-8"
 
   - year: 2021
     title: "Deep spatial representation learning of polyamide nanofiltration membranes"
     venue: "Journal of Membrane Science"
     role_zh: "第一作者"
     role_en: "First author"
+    url: "https://doi.org/10.1016/j.memsci.2020.118910"
     code: "https://github.com/xianyu564/Nanofiltration-Membrane-Deep-Learning"
 
   - year: 2021
@@ -32,12 +35,14 @@ published:
     venue: "Talanta"
     role_zh: "第二作者"
     role_en: "Second author"
+    url: "https://doi.org/10.1016/j.talanta.2021.122651"
 
   - year: 2019
     title: "UV-induced room temperature synthesis of microporous ladder polymers with efficient photosensitization"
     venue: "Reactive and Functional Polymers"
     role_zh: "第二作者"
     role_en: "Second author"
+    url: "https://doi.org/10.1016/j.reactfunctpolym.2019.104362"
 
 thesis:
   year: 2024
@@ -65,8 +70,8 @@ scholarly_activities:
     en: "Acknowledged non-author contribution to Xiang Biao, ‘Experiencing, Education, and the Capacity to Form Experience’; manuscript in scholarly circulation and intended for Open Times."
 
   - type: "review"
-    zh: "同行评审：Journal of Chemical Theory and Computation、Frontiers in Chemistry、Frontiers in Pharmacology、Frontiers in Immunology（2021–2025 年峰值年度影响因子：6.6、5.5、6.0、8.8）。"
-    en: "Peer reviewer: Journal of Chemical Theory and Computation (JIF 6.6); Frontiers in Chemistry (JIF 5.5); Frontiers in Pharmacology (JIF 6.0); Frontiers in Immunology (JIF 8.8). Peak annual JIF, 2021–2025."
+    zh: "同行评审：Journal of Chemical Theory and Computation、Frontiers in Chemistry、Frontiers in Pharmacology、Frontiers in Immunology、Frontiers in Bioengineering and Biotechnology（2021–2025 年峰值年度影响因子：6.6、5.5、6.0、8.8、5.8）。"
+    en: "Peer reviewer: Journal of Chemical Theory and Computation (JIF 6.6); Frontiers in Chemistry (JIF 5.5); Frontiers in Pharmacology (JIF 6.0); Frontiers in Immunology (JIF 8.8); Frontiers in Bioengineering and Biotechnology (JIF 5.8). Peak annual JIF, 2021–2025."
 
 patents:
   - year: 2020
