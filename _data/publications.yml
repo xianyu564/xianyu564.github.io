@@ -1,0 +1,99 @@
+published:
+  - year: 2026
+    title: "Quantitative computational validation of nanoscale interactions between drug molecules and diabetic wound-related proteins for drug discovery"
+    venue: "ACS Nano Medicine"
+    role_zh: "第一作者"
+    role_en: "First author"
+    url: "https://doi.org/10.1021/acsnanomed.5c00180"
+    highlight_zh: "整合 LLM 文献挖掘与分子对接、分子动力学和量子化学，完成候选药物排序并以叶酸进行体外验证。"
+    highlight_en: "Integrated LLM-powered literature mining with docking, molecular dynamics, and quantum chemistry; prioritized folic acid and validated the ranking in vitro."
+
+  - year: 2024
+    title: "Enhancing X-ray sensitization with multifunctional nanoparticles"
+    venue: "Small"
+    role_zh: "共同通讯作者"
+    role_en: "Co-corresponding author"
+
+  - year: 2024
+    title: "Clearance of senescent cells alleviates metabolic dysfunction-associated steatohepatitis"
+    venue: "EASL Congress 2024 Abstract Book / Journal of Hepatology"
+    role_zh: "第四作者"
+    role_en: "Fourth author"
+
+  - year: 2021
+    title: "Deep spatial representation learning of polyamide nanofiltration membranes"
+    venue: "Journal of Membrane Science"
+    role_zh: "第一作者"
+    role_en: "First author"
+    code: "https://github.com/xianyu564/Nanofiltration-Membrane-Deep-Learning"
+
+  - year: 2021
+    title: "Rapid SERS inspection of carcinogenic aromatic amines in textiles by using liquid interfacial assembled Au array"
+    venue: "Talanta"
+    role_zh: "第二作者"
+    role_en: "Second author"
+
+  - year: 2019
+    title: "UV-induced room temperature synthesis of microporous ladder polymers with efficient photosensitization"
+    venue: "Reactive and Functional Polymers"
+    role_zh: "第二作者"
+    role_en: "Second author"
+
+thesis:
+  year: 2024
+  title: "3D Bio-Printing and AI-assisted Biomaterial Discovery for Diabetic Wound Care"
+  venue_zh: "新加坡国立大学博士论文"
+  venue_en: "National University of Singapore Ph.D. thesis"
+
+manuscripts:
+  - title: "Designing 2D membranes for precise separation of molecules with ultra-close molecular weights but different shapes"
+    venue: "Journal of the American Chemical Society"
+    status_zh: "第二作者；完成一轮同行评议后重新投稿"
+    status_en: "Second author; resubmitted after peer review"
+
+  - title: "IKBKE as a β-Catenin kinase regulating mesenchymal stem cell differentiation"
+    status_zh: "第二作者；准备中"
+    status_en: "Second author; in preparation"
+
+  - title: "Amlexanox-induced nephrogenic diabetes insipidus independent of IKKε inhibition"
+    status_zh: "第二作者；准备中"
+    status_en: "Second author; in preparation"
+
+scholarly_activities:
+  - type: "contribution"
+    zh: "非作者贡献：参与项飙《经历、教育和形成经验的能力》讨论及修改；手稿处于学术传阅中，作者拟投《开放时代》。"
+    en: "Acknowledged non-author contribution to Xiang Biao, ‘Experiencing, Education, and the Capacity to Form Experience’; manuscript in scholarly circulation and intended for Open Times."
+
+  - type: "review"
+    zh: "同行评审：Journal of Chemical Theory and Computation；Frontiers in Chemistry；Frontiers in Pharmacology；Frontiers in Immunology。"
+    en: "Ad hoc peer reviewer: Journal of Chemical Theory and Computation; Frontiers in Chemistry; Frontiers in Pharmacology; Frontiers in Immunology."
+
+patents:
+  - year: 2020
+    title_zh: "一种基于移动最小二乘法的谱图基础维度校正及其差示分析方法"
+    title_en: "A spectral graph fundamental dimension correction and differential analysis method based on moving least squares"
+    number: "CN109596558B"
+    role_zh: "第一发明人，已授权"
+    role_en: "First inventor, granted"
+
+software_copyrights:
+  registration_year: 2025
+  rights_assigned_year: 2026
+  note_zh: "本人为原始开发者及登记权利人；5 项软件著作权于 2025 年完成登记，相关权利于 2026 年完成转让。"
+  note_en: "Original developer and copyright registrant; five software copyrights were registered in 2025 and the related rights were assigned in 2026."
+  items:
+    - zh: "周易 AI 风险决策 APP 设计软件"
+      en: "AI I-Ching Risk-Decision App Design Software"
+      reg: "16146302"
+    - zh: "紫微斗数排盘及风险决策系统"
+      en: "Ziwei Doushu Charting & Risk Decision System"
+      reg: "16412604"
+    - zh: "小六壬排盘及风险决策系统"
+      en: "Xiaoliuren Charting & Risk Decision System"
+      reg: "16412742"
+    - zh: "八字排盘及风险决策系统"
+      en: "BaZi Charting & Risk Decision System"
+      reg: "16412797"
+    - zh: "六爻排盘及风险决策系统"
+      en: "Hexagram Charting & Risk Decision System"
+      reg: "16713520"
