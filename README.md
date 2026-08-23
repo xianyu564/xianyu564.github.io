@@ -25,13 +25,17 @@ _data/
   publications.yml  # publications, manuscripts, academic service, IP
   projects.yml      # selected research/technical work and public repositories
 
+cv/
+  Ziyang_Zhang_CV_EN.pdf
+  Ziyang_Zhang_CV_ZH.pdf
+
 index.md / en/index.md
 about.md / en/about.md
 publications.md / en/publications.md
 projects.md / en/projects.md
 ```
 
-Principle: **one public fact, one canonical data owner**. Reader-facing pages summarize and render those records rather than redefining them.
+Principle: **one public fact, one canonical data owner**. Reader-facing pages summarize and render those records rather than redefining them. CV files use stable paths so future résumé refreshes can replace the assets without changing public links.
 
 ## Disclosure boundary
 
