@@ -6,97 +6,143 @@ title: "主页"
 {% assign p = site.data.profile %}
 {% assign pubs = site.data.publications %}
 {% assign projects = site.data.projects %}
-{% assign phd = p.education | first %}
-{% assign lead_paper = pubs.published | first %}
 
 <div class="hero-section">
-  <h1>{{ p.identity.name_zh }} <span style="font-size:0.55em; font-weight:500;">{{ p.identity.credential }}</span></h1>
-  <p style="font-size:1.08rem; color:var(--text-secondary); margin:0.35rem 0;">{{ p.identity.tagline_zh }}</p>
-  <p style="font-size:0.92rem; color:var(--text-tertiary); margin:0;">{{ p.identity.location_zh }}</p>
-</div>
-
-<hr class="section-divider">
-
-## 当前
-
-<div class="cv-summary">
-  {% for exp in p.experience %}
-    {% if exp.current %}
-    <div class="cv-item">
-      <strong>{{ exp.role_zh }}</strong><br>
-      {{ exp.organization_zh }} · {{ exp.start }}–至今<br>
-      <span style="color:var(--text-secondary);">{{ exp.description_zh }}</span>
-    </div>
-    {% endif %}
-  {% endfor %}
-  <div class="cv-item">
-    <strong>{{ phd.degree_zh }} · {{ phd.field_zh }}</strong><br>
-    {{ phd.institution_zh }} · {{ phd.start }}–{{ phd.end }}<br>
-    <span style="color:var(--text-secondary);">博士论文：{{ phd.thesis }}</span>
+  <h1>{{ p.identity.name_zh }} <span class="credential">{{ p.identity.credential }}</span></h1>
+  <p class="hero-tagline">{{ p.identity.tagline_zh }}</p>
+  <p class="hero-meta">{{ p.identity.location_zh }} · <a href="mailto:{{ p.contact.email }}">{{ p.contact.email }}</a></p>
+  <div class="hero-actions">
+    <a href="{{ p.contact.cv_zh }}">中文简历 PDF</a>
+    <a href="{{ p.contact.cv_en }}">English CV</a>
+    <a href="{{ p.contact.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="{{ p.contact.orcid }}" target="_blank" rel="noopener">ORCID</a>
+    <a href="{{ p.contact.github }}" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div>
 
-<hr class="section-divider">
+## 工作经历
 
-## 研究与技术主线
+{% for exp in p.experience %}
+<div class="cv-entry">
+  <div class="cv-entry-heading">
+    <strong>{{ exp.role_zh }}</strong>
+    <span>{{ exp.organization_zh }}{% if exp.brand_zh %} · {{ exp.brand_zh }}{% endif %}</span>
+    <span class="cv-date">{{ exp.start | replace: '-', '.' }}–{% if exp.current %}至今{% else %}{{ exp.end | replace: '-', '.' }}{% endif %}</span>
+  </div>
+  <p>{{ exp.description_zh }}</p>
+</div>
+{% endfor %}
 
-<div class="research-topics">
-  <div class="topic-card">
-    <h3>AI 系统</h3>
-    <p>面向真实工作流的 AI / LLM 应用、软件开发与智能自动化；公开主页对当前企业项目只保留经允许的高层描述。</p>
+## 教育经历
+
+{% for edu in p.education %}
+<div class="cv-entry">
+  <div class="cv-entry-heading">
+    <strong>{{ edu.degree_zh }} · {{ edu.field_zh }}</strong>
+    <span>{{ edu.institution_zh }}</span>
+    <span class="cv-date">{{ edu.start | replace: '-', '.' }}–{{ edu.end | replace: '-', '.' }}</span>
   </div>
-  <div class="topic-card">
-    <h3>AI for Science</h3>
-    <p>把文献、模型、模拟与实验连接成可执行研究流程，关注药物发现、生物材料与科学知识工作流。</p>
+  {% if edu.joint_training %}
+  <ul>
+    {% for jt in edu.joint_training %}<li>联合培养：{{ jt.zh }}（{{ jt.period }}）</li>{% endfor %}
+  </ul>
+  {% endif %}
+  {% if edu.thesis %}<p><strong>博士论文：</strong><em>{{ edu.thesis }}</em></p>{% endif %}
+</div>
+{% endfor %}
+
+## 项目经历
+
+{% for project in projects.selected %}
+<div class="cv-project">
+  <div class="cv-entry-heading">
+    <strong>{{ project.title_zh }}</strong>
+    <span>{{ project.role_zh }}</span>
+    <span class="cv-date">{{ project.period | replace: 'Present', '至今' }}</span>
   </div>
-  <div class="topic-card">
-    <h3>计算化学</h3>
-    <p>分子对接、分子动力学、量子化学与高性能计算，用于蛋白质–小分子及多尺度生物分子互作分析。</p>
+  {% if project.bullets_zh %}
+  <ul>
+    {% for bullet in project.bullets_zh %}<li>{{ bullet }}</li>{% endfor %}
+  </ul>
+  {% else %}
+  <p>{{ project.description_zh }}</p>
+  {% endif %}
+  {% if project.links %}
+  <div class="inline-links">
+    {% for link in project.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% endfor %}
   </div>
+  {% endif %}
+</div>
+{% endfor %}
+
+## 学术论文
+
+<div class="cv-list">
+{% for pub in pubs.published %}
+<div class="cv-list-item">
+  <strong>{{ pub.title }}</strong><br>
+  <em>{{ pub.venue }}</em> · {{ pub.role_zh }} · {{ pub.year }}
+  {% if pub.highlight_zh %}<div class="cv-detail">{{ pub.highlight_zh }}</div>{% endif %}
+  {% if pub.url or pub.code %}<div class="inline-links">{% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">DOI</a>{% endif %}{% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>{% endif %}</div>{% endif %}
+</div>
+{% endfor %}
 </div>
 
-<hr class="section-divider">
+## 未刊稿件
 
-## 代表性工作
+<ul class="cv-plain-list">
+{% for item in pubs.manuscripts %}
+  <li><strong>{{ item.status_zh }}</strong>：{{ item.title }}{% if item.venue %} · <em>{{ item.venue }}</em>{% endif %}</li>
+{% endfor %}
+</ul>
 
-<div class="publications-container">
-  <div class="publication-item">
-    <strong>{{ lead_paper.title }}</strong><br>
-    <em>{{ lead_paper.venue }}</em> · {{ lead_paper.role_zh }} · {{ lead_paper.year }}<br>
-    <span style="color:var(--text-secondary);">{{ lead_paper.highlight_zh }}</span><br>
-    <div class="publication-links"><a href="{{ lead_paper.url }}" target="_blank">DOI</a></div>
-  </div>
+## 学术活动
 
-  {% for project in projects.selected limit:3 %}
-  <div class="publication-item">
-    <strong>{{ project.title_zh }}</strong> <span style="color:var(--text-tertiary);">{{ project.period }}</span><br>
-    <span style="color:var(--text-secondary);">{{ project.description_zh }}</span>
-    {% if project.links %}
-    <div class="publication-links">
-      {% for link in project.links %}<a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% endfor %}
-    </div>
-    {% endif %}
-  </div>
-  {% endfor %}
+<ul class="cv-plain-list">
+{% for item in pubs.scholarly_activities %}<li>{{ item.zh }}</li>{% endfor %}
+</ul>
+
+## 发明专利
+
+{% for item in pubs.patents %}
+<div class="cv-list-item">
+  <strong>{{ item.title_zh }}</strong><br>
+  {{ item.number }} · {{ item.role_zh }} · {{ item.year }}
 </div>
+{% endfor %}
 
-<hr class="section-divider">
+## 软件著作权
+
+<p>{{ pubs.software_copyrights.note_zh }}</p>
+<ol class="cv-plain-list">
+{% for item in pubs.software_copyrights.items %}<li>{{ item.zh }}（登记号：{{ item.reg }}）</li>{% endfor %}
+</ol>
+
+## 实习经历
+
+<p><strong>博士期间：</strong>{{ p.internships.phd_zh | join: '；' }}。</p>
+<p><strong>本科期间：</strong>{{ p.internships.bsc_zh | join: '；' }}。</p>
+
+## 其他
+
+<p><strong>语言：</strong>{{ p.additional.languages_zh }}</p>
+<p><strong>科研合作：</strong>{{ p.additional.collaborations_zh }}</p>
+<p><strong>艺术创作与协会：</strong>{{ p.additional.arts_zh }}</p>
 
 ## {{ p.now.label_zh }}
 
-<div class="update-item">
-  <span class="update-content"><strong><a href="{{ p.now.url }}" target="_blank">{{ p.now.question_zh }}</a></strong></span><br>
-  <span style="color:var(--text-secondary); font-size:0.9rem;">{{ p.now.note_zh }}</span>
+<div class="current-inquiry">
+  <a href="{{ p.now.url }}" target="_blank" rel="noopener">{{ p.now.question_zh }}</a>
 </div>
 
-<hr class="section-divider">
+## 公开项目与代码
 
-## 导航
-
-- [关于我]({{ site.baseurl }}/about/)：完整的职业、教育、研究与技术档案
-- [发表与学术活动]({{ site.baseurl }}/publications/)：论文、未刊稿件、学术服务、专利与软件著作权
-- [项目与开源]({{ site.baseurl }}/projects/)：代表性研究 / 技术项目与次级公开仓库
+<div class="repo-list">
+{% for repo in projects.public_repositories %}
+  <div class="repo-item"><a href="{{ repo.url }}" target="_blank" rel="noopener"><strong>{{ repo.name }}</strong></a><span>{{ repo.description_zh }}</span></div>
+{% endfor %}
+</div>
 
 <div class="language-notice">
-📍 <em>This website is also available in <a href="{{ site.baseurl }}/en/">English</a></em>
+<a href="{{ site.baseurl }}/en/">English version</a>
 </div>

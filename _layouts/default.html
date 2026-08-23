@@ -13,29 +13,27 @@
   {% include head-custom.html %}
 </head>
 <body>
-  {% include header.html %}
+  <div class="site-shell">
+    {% include header.html %}
 
-  <main class="main-content">
-    <div class="wrapper">
-      <article class="page-content">
-        {{ content }}
-      </article>
-    </div>
-  </main>
+    <div class="content-column">
+      <main class="main-content">
+        <article class="page-content">
+          {{ content }}
+        </article>
+      </main>
 
-  <footer class="site-footer">
-    <div class="wrapper">
-      <div class="footer-content">
+      <footer class="site-footer">
         <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author | default: site.title }}.</p>
         <p>
           <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-          &nbsp;&middot;&nbsp;
+          <span aria-hidden="true">·</span>
           <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>
-          &nbsp;&middot;&nbsp;
+          <span aria-hidden="true">·</span>
           <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
-      </div>
+      </footer>
     </div>
-  </footer>
+  </div>
 </body>
 </html>
