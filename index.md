@@ -6,6 +6,8 @@ title: "主页"
 {% assign p = site.data.profile %}
 {% assign pubs = site.data.publications %}
 {% assign projects = site.data.projects %}
+{% assign phd = p.education | first %}
+{% assign lead_paper = pubs.published | first %}
 
 <div class="hero-section">
   <h1>{{ p.identity.name_zh }} <span style="font-size:0.55em; font-weight:500;">{{ p.identity.credential }}</span></h1>
@@ -28,9 +30,9 @@ title: "主页"
     {% endif %}
   {% endfor %}
   <div class="cv-item">
-    <strong>{{ p.education[0].degree_zh }} · {{ p.education[0].field_zh }}</strong><br>
-    {{ p.education[0].institution_zh }} · {{ p.education[0].start }}–{{ p.education[0].end }}<br>
-    <span style="color:var(--text-secondary);">博士论文：{{ p.education[0].thesis }}</span>
+    <strong>{{ phd.degree_zh }} · {{ phd.field_zh }}</strong><br>
+    {{ phd.institution_zh }} · {{ phd.start }}–{{ phd.end }}<br>
+    <span style="color:var(--text-secondary);">博士论文：{{ phd.thesis }}</span>
   </div>
 </div>
 
@@ -59,10 +61,10 @@ title: "主页"
 
 <div class="publications-container">
   <div class="publication-item">
-    <strong>{{ pubs.published[0].title }}</strong><br>
-    <em>{{ pubs.published[0].venue }}</em> · {{ pubs.published[0].role_zh }} · {{ pubs.published[0].year }}<br>
-    <span style="color:var(--text-secondary);">{{ pubs.published[0].highlight_zh }}</span><br>
-    <div class="publication-links"><a href="{{ pubs.published[0].url }}" target="_blank">DOI</a></div>
+    <strong>{{ lead_paper.title }}</strong><br>
+    <em>{{ lead_paper.venue }}</em> · {{ lead_paper.role_zh }} · {{ lead_paper.year }}<br>
+    <span style="color:var(--text-secondary);">{{ lead_paper.highlight_zh }}</span><br>
+    <div class="publication-links"><a href="{{ lead_paper.url }}" target="_blank">DOI</a></div>
   </div>
 
   {% for project in projects.selected limit:3 %}
